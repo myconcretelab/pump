@@ -15,4 +15,8 @@ build/
 .cache/
 out/
 data/sessions/
+data/logs/
+backend/data/configs/last.json
+backend/data/sessions/
+backend/data/storageStates/
 .turbo/
