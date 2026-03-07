@@ -1,0 +1,118 @@
+{
+  "filename": "0206_get_0526936276c052cecf92bba66fdbe72d821ee88ef162f8e1f8ad65693c497d63.json",
+  "url": "https://www.airbnb.fr/api/v3/getMulticalSeasonalRulesetsByRuleGroupIds/0526936276c052cecf92bba66fdbe72d821ee88ef162f8e1f8ad65693c497d63?operationName=getMulticalSeasonalRulesetsByRuleGroupIds&locale=fr&currency=EUR&variables=%7B%22ruleGroupIds%22%3A%5B%2282396363%22%2C%22493209357%22%5D%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%220526936276c052cecf92bba66fdbe72d821ee88ef162f8e1f8ad65693c497d63%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=49, cdn-cache; desc=MISS, edge; dur=90, origin; dur=56",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "51",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.22.254.178,b=209112084,c=g,n=FR_IDF_PARIS,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=217,c=o]",
+    "content-length": "323",
+    "x-client-request-id": "03170yc1w49vh50v5kr7108w97tk",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Sat, 07 Mar 2026 13:08:29 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "l5oInSu3WH9FcFGAEJeJ1w==",
+    "x-airbnb-sureride": "c1a1o.0.b2fe1602.1772888909.c76cc14%%i1c1o%%t1d1o.l5oInSu3WH9FcFGAEJeJ1w==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Sat, 07 Mar 2026 13:08:29 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "1c74afc8c557a36736d6d5ad6a41633cc419fb123b5b3907fbb24dc2dd617e66",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=55d19adbf0d71"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "1j21awx07zscmr1cyqf5h0th0w1k",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "1czkc1v1hexjo51qs6gdi0umx8jq",
+    "x-client-request-id": "03170yc1w49vh50v5kr7108w97tk",
+    "x-client-version": "1c8c00a20c7a421e67299d22a9a6d3fc15a43e5f",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "patek": {
+        "__typename": "PatekQuery",
+        "getSeasonalRules": {
+          "__typename": "PatekSeasonalRulesResponse",
+          "seasonalRules": [
+            {
+              "__typename": "PatekSeasonalRule",
+              "color": 4,
+              "createdByUserId": "11834769",
+              "id": "82396363",
+              "title": "4 nuits - vacances",
+              "availabilityRules": {
+                "__typename": "PatekAvailabilityRule",
+                "closedForCheckin": [],
+                "closedForCheckout": [],
+                "maxNights": {},
+                "minNights": {
+                  "ALL": 4
+                }
+              },
+              "pricingRules": [],
+              "canEdit": true,
+              "canBeReused": true
+            },
+            {
+              "__typename": "PatekSeasonalRule",
+              "color": 1,
+              "createdByUserId": "11834769",
+              "id": "493209357",
+              "title": "3 nuits",
+              "availabilityRules": {
+                "__typename": "PatekAvailabilityRule",
+                "closedForCheckin": [],
+                "closedForCheckout": [],
+                "maxNights": {},
+                "minNights": {
+                  "ALL": 3
+                }
+              },
+              "pricingRules": [],
+              "canEdit": true,
+              "canBeReused": true
+            }
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "l5oInSu3WH9FcFGAEJeJ1w=="
+    }
+  },
+  "timestamp": "2026-03-07T13:08:29.234Z",
+  "context": "during-scroll",
+  "keptByFilters": true,
+  "filterExplanation": "No filters applied, keeping all responses"
+}

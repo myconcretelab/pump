@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://www.airbnb.fr/multicalendar/",
+  "username": "soazigmolinier@hotmail.fr",
+  "password": "",
+  "hasOTP": true,
+  "persistSession": true,
+  "manualScrollMode": false,
+  "manualScrollDuration": 20000,
+  "scrollSelector": ".ReactVirtualized__Grid__innerScrollContainer",
+  "scrollCount": 14,
+  "scrollDistance": 800,
+  "scrollDelay": 1000,
+  "waitBeforeScroll": 2000,
+  "enableHAR": false,
+  "outputFolder": "",
+  "filterRules": {
+    "inclusive": [],
+    "exclusive": []
+  },
+  "loginStrategy": "multi-step",
+  "advancedSelectors": {
+    "usernameInput": "input[type=\"email\"], input[type=\"text\"][placeholder*=\"email\"], input[name*=\"email\"]",
+    "passwordInput": "input[type=\"password\"]",
+    "submitButton": "button[type=\"submit\"], button:contains(\"Login\"), button:contains(\"Sign in\")",
+    "emailFirstButton": "button:has-text(\"Continuer avec un email\"), button:has-text(\"Continuer avec un e-mail\"), button:has-text(\"Continue with email\")",
+    "continueAfterUsernameButton": "button:has-text(\"Continuer\"), button:has-text(\"Continue\"), button:has-text(\"Suivant\"), button:has-text(\"Next\"), button[type=\"submit\"]",
+    "finalSubmitButton": "button:has-text(\"Connexion\"), button:has-text(\"Se connecter\"), button:has-text(\"Continuer\"), button:has-text(\"Continue\"), button:has-text(\"Sign in\"), button:has-text(\"Log in\"), button[type=\"submit\"]"
+  }
+}

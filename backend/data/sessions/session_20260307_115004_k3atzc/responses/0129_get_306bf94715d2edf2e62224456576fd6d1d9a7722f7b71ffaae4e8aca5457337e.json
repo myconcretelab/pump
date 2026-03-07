@@ -1,0 +1,81 @@
+{
+  "filename": "0129_get_306bf94715d2edf2e62224456576fd6d1d9a7722f7b71ffaae4e8aca5457337e.json",
+  "url": "https://www.airbnb.fr/api/v3/HostRecommendedActionsCountQuery/306bf94715d2edf2e62224456576fd6d1d9a7722f7b71ffaae4e8aca5457337e?operationName=HostRecommendedActionsCountQuery&locale=fr&currency=EUR&variables=%7B%22userId%22%3A%22VXNlcjoxMTgzNDc2OQ%3D%3D%22%2C%22includeListingIds%22%3Afalse%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22306bf94715d2edf2e62224456576fd6d1d9a7722f7b71ffaae4e8aca5457337e%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "br",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=570, cdn-cache; desc=MISS, edge; dur=91, origin; dur=580",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "571",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.22.254.180,b=187760622,c=g,n=FR_IDF_PARIS,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=247,c=o]",
+    "content-length": "154",
+    "x-client-request-id": "1441lrq0v4ctyt0hogeli0ihjzfj",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Sat, 07 Mar 2026 10:50:08 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "kULIAQ3S4z_2TwpiVzjlqQ==",
+    "x-airbnb-sureride": "c1a1o.0.b4fe1602.1772880608.b30ffee%%i1c1o%%t1d1o.kULIAQ3S4z_2TwpiVzjlqQ==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Sat, 07 Mar 2026 10:50:08 GMT",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "1c74afc8c557a36736d6d5ad6a41633cc419fb123b5b3907fbb24dc2dd617e66",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=92dc02715fee5"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "1bg2hsp1t8ccbp1rylgdl0rxmv1h",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "0ab258a0ezrnjz0jbxgmu02r6u1v",
+    "x-client-request-id": "1441lrq0v4ctyt0hogeli0ihjzfj",
+    "x-client-version": "1c8c00a20c7a421e67299d22a9a6d3fc15a43e5f",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "node": {
+        "__typename": "User",
+        "listingsWithRecommendedActions": {
+          "__typename": "SupplyListingWithActionsConnection",
+          "pageInfo": {
+            "__typename": "PageInfoWithCount",
+            "totalCount": 17
+          }
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "kULIAQ3S4z_2TwpiVzjlqQ=="
+    }
+  },
+  "timestamp": "2026-03-07T10:50:08.897Z",
+  "context": "before-scroll",
+  "keptByFilters": true,
+  "filterExplanation": "No filters applied, keeping all responses"
+}

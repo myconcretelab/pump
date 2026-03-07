@@ -1,0 +1,67 @@
+{
+  "session": {
+    "id": "session_20260306_155014_ugi38i",
+    "startTime": "2026-03-06T14:50:18.599Z",
+    "duration": 4358,
+    "success": false
+  },
+  "configuration": {
+    "baseUrl": "https://www.airbnb.fr/multicalendar/",
+    "scrollSelector": ".ReactVirtualized__Grid__innerScrollContaine",
+    "scrollConfig": {
+      "count": 5,
+      "distance": 500,
+      "delay": 1000
+    }
+  },
+  "results": {
+    "totalRequests": 97,
+    "totalResponses": 97,
+    "summary": {
+      "totalRequests": 97,
+      "totalResponses": 97,
+      "byStatus": {
+        "200": 88,
+        "204": 8,
+        "302": 1
+      },
+      "byContentType": {
+        "text/html;charset=utf-8": 2,
+        "font/woff2": 1,
+        "image/webp": 1,
+        "text/javascript": 64,
+        "text/css": 1,
+        "unknown": 9,
+        "image/avif": 2,
+        "application/json;charset=utf-8": 9,
+        "application/javascript;charset=UTF-8": 1,
+        "application/javascript; charset=utf-8": 1,
+        "application/javascript; charset=UTF-8": 2,
+        "text/javascript; charset=utf-8": 1,
+        "text/plain; charset=utf-8": 2,
+        "text/plain;charset=utf-8": 1
+      },
+      "byContext": {
+        "before-login": 19,
+        "login": 78
+      }
+    }
+  },
+  "filters": {
+    "applied": {
+      "inclusive": [],
+      "exclusive": []
+    },
+    "explanation": "Responses captured and filtered according to configured rules"
+  },
+  "errors": [
+    {
+      "message": "Persisted session expired or is unavailable. Provide the password once to refresh it",
+      "timestamp": "2026-03-06T14:50:16.344Z"
+    }
+  ],
+  "metadata": {
+    "generatedBy": "pump-automation",
+    "version": "1.0.0"
+  }
+}

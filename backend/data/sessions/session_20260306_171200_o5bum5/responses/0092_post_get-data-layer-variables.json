@@ -1,0 +1,88 @@
+{
+  "url": "https://www.airbnb.fr/api/v2/get-data-layer-variables?locale=fr&currency=EUR",
+  "method": "POST",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=48, cdn-cache; desc=MISS, edge; dur=154, origin; dur=71",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "50",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.83,b=494450073,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_STERLING,o=20940],[a=237,c=o]",
+    "content-length": "775",
+    "x-client-request-id": "0c6n7x61li2h4t1wjyetr0nqvlso",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 16:12:03 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "EH6JG_NI1lHr1idaY-hfPA==",
+    "x-airbnb-sureride": "c1a1o.0.53b71402.1772813522.1d78b599%%i1c1o%%t1d1o.EH6JG_NI1lHr1idaY-hfPA==%%h1",
+    "x-server-canonical-path": "/v2/get-data-layer-variables",
+    "date": "Fri, 06 Mar 2026 16:12:03 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=79da65f6eff23"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "x-airbnb-network-log-link": "0im2l330d7jzml1101uif0e1hacu",
+    "x-csrf-without-token": "1",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-airbnb-client-trace-id": "0ub57c60ntb3h70rbzumu14wsxrf",
+    "x-client-request-id": "0c6n7x61li2h4t1wjyetr0nqvlso",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "content-type": "application/json",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "userData": {
+      "advancedMatchingData": {
+        "email": "80f932073a7f191aa38400ff3c4c320b18b4ccdde829756cfe9bed9931883593",
+        "firstName": "2b1105ec70cd5700c7b1cb2e219ffef010ed8857ac8e86e850660c60ab4b4564",
+        "lastName": "d6a05448444021ce5403d9af8c53beac539315994dfd206cb939eb29ca240e9f",
+        "gender": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a",
+        "phone": "654ccd55f465d1a30bd31c4bc35c9847590176d5839a9c5e5d584c9296699c7e",
+        "dateOfBirth": "8b48ecdbafafbf75f8c0d6df5e40a28b06ebbd5a3bbf14e629189764c3d127e1",
+        "dateOfBirthYear": "576c85c584f60555c2a024cbb99dfbbdb5f58c3bdcf28dbc8ea315fd46a388f3",
+        "dateOfBirthMonth": "c97550ce8213ef5cf6ed4ba48790c137df3ef6a5da20b48961001a634b6cead2",
+        "dateOfBirthDay": "3514acf61732f662da19625f7fe781c3e483f2dce8506012f3bb393f5003e105",
+        "city": "a96bc59b8f11d0986777fffaeea24cd067f6f149779711f721049587de7dfab5",
+        "state": "196c562cb5e78e8cb10c66466868ca8b40ad7b029d8ecef850b717cebe055eb5",
+        "country": "67ad8f41a7bb0a18c45f3efd8f6a32bdcd832bcf8f3f2eb44006c03d53076e18",
+        "externalId": "5c9aa9ee5720abd8b46321e3ff0a70d63a1f058866e49dfb5a8d4e9d218734c7",
+        "emailMd5": "03a7609158a52540ebedb2d637b6b42b65eda73c58eeb59c8987b619407043e3"
+      }
+    },
+    "stayListingData": {},
+    "stayReservationData": {},
+    "experienceListingData": {},
+    "experienceReservationData": {
+      "serviceFeesInUSD": 0
+    },
+    "activityListingData": {},
+    "activityReservationData": {
+      "serviceFeesInUSD": 0
+    }
+  },
+  "timestamp": "2026-03-06T16:12:03.038Z",
+  "context": "before-scroll",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

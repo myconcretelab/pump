@@ -1,0 +1,29 @@
+{
+  "url": "https://tr.snapchat.com/p?pid=aafaa522-5bd4-40ec-95ef-948d87eff12b&ev=PAGE_VIEW&v=2.3&rand=2014848123&pl=https%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F&u_hem=&u_hpn=&u_c1=&cdid=1772809725_EAMjcyNzU4NGYzZD-%2Flogin-2026-03-06T16%3A49%3A28.638%2B01%3A00&rf=&gtmcb=1122784075",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains",
+    "cache-control": "no-cache, no-transform",
+    "x-envoy-upstream-service-time": "1",
+    "via": "1.1 google",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "content-length": "68",
+    "date": "Fri, 06 Mar 2026 15:49:28 GMT",
+    "content-type": "image/png",
+    "server": "API Gateway"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "image/png",
+  "body": null,
+  "timestamp": "2026-03-06T15:49:28.793Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

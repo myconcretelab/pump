@@ -1,0 +1,35 @@
+{
+  "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1023009977/?random=419156302&fst=1772798440527&cv=10&fmt=8&label=RuSGCLbRj_sbELnJ5-cD&bg=ffffff&guid=ON&u_w=1280&u_h=720&gtm=45j91e6341v874143154z8551874z9894587894za20gzb551874zd551874&auid=1360139302.1772798441&dma=1&dma_cps=a&npa=0&gcs=G111&gcu=1&gcd=13n3nPn2n5l1&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.0&uaw=0&pscdl=denied&url=https%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F&tiba=Connexion%2FInscription%C2%A0%E2%80%93%2BAirbnb&data=event%3Dpage_view%3Baudience_type%3Dvisitor%3Bpage_URL%3Dhttps%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F%3BConsentAllowedTools%3D%3Breferrer_url%3D%3BOneTrustActiveGroups%3D&ec_mode=c&em=tv.1&value=0&uip=86.253.143.0&tag_exp=103116026~103200004~104573694~115938466~115938468~116024733~116024736~117477893~117484252~117625640~117625641&_tu=DA&s3p=1&ct_cookie_present=false&crd=CLTesQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQIItMaxAgiT2rECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQIIl9SxAgjJ27ECCLHhsQIIsuGxAgiv3rECShl0cmlnZ2VyPW5hdmlnYXRpb24tc291cmNlWgMKAQFiAwoBAw&cerd=CgSI3b0t&eitems=ChEIgJOqzQYQ6PGtm-i1-djRARIdAC_RpeW7jBEgnMRHyj6pGq7X-KiPCLNvhh7gMcA&fsk=ChAIgJOqzQYQno3Fl5Dqo8F5EiwAEbEY1i0FM2XbmIuI908JHzXMirxTpiRV7DG4e9VL-VaH9e5rqn6dyQimXxoCC6Y&pscrd=IhMI4IrG6pyLkwMVzgiMBh0isB3gMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5haXJibmIuZnIvQldDaEFJZ0pPcXpRWVF2SWlHeHIybG1aUWNFaTBBYmN4aVJnQmFWUlFpMUllbkdvQ0JGQ1R1ZmpHUU0tOXJ3cEJEZkVaNnpVck5KMExSRG9KUjQ3SlVDcE16DAgJYggIABAAGAAgAA",
+  "method": "POST",
+  "status": 302,
+  "headers": {
+    "x-content-type-options": "nosniff",
+    "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "p3p": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"",
+    "date": "Fri, 06 Mar 2026 12:00:40 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "cache-control": "no-cache, must-revalidate",
+    "timing-allow-origin": "*",
+    "location": "https://www.google.com/pagead/1p-conversion/1023009977/?random=419156302&fst=1772798440527&cv=10&fmt=8&label=RuSGCLbRj_sbELnJ5-cD&bg=ffffff&guid=ON&u_w=1280&u_h=720&gtm=45j91e6341v874143154z8551874z9894587894za20gzb551874zd551874&auid=1360139302.1772798441&dma=1&dma_cps=a&npa=0&gcs=G111&gcu=1&gcd=13n3nPn2n5l1&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=26.3.0&uaw=0&pscdl=denied&url=https%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F&tiba=Connexion%2FInscription%C2%A0%E2%80%93%2BAirbnb&data=event%3Dpage_view%3Baudience_type%3Dvisitor%3Bpage_URL%3Dhttps%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F%3BConsentAllowedTools%3D%3Breferrer_url%3D%3BOneTrustActiveGroups%3D&ec_mode=c&em=tv.1&value=0&uip=86.253.143.0&tag_exp=103116026~103200004~104573694~115938466~115938468~116024733~116024736~117477893~117484252~117625640~117625641&_tu=DA&s3p=1&ct_cookie_present=false&crd=CLTesQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQIItMaxAgiT2rECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQIIl9SxAgjJ27ECCLHhsQIIsuGxAgiv3rECShl0cmlnZ2VyPW5hdmlnYXRpb24tc291cmNlWgMKAQFiAwoBAw&cerd=CgSI3b0t&fsk=ChAIgJOqzQYQno3Fl5Dqo8F5EiwAEbEY1i0FM2XbmIuI908JHzXMirxTpiRV7DG4e9VL-VaH9e5rqn6dyQimXxoCC6Y&pscrd=IhMI4IrG6pyLkwMVzgiMBh0isB3gMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5haXJibmIuZnIvQldDaEFJZ0pPcXpRWVF2SWlHeHIybG1aUWNFaTBBYmN4aVJnQmFWUlFpMUllbkdvQ0JGQ1R1ZmpHUU0tOXJ3cEJEZkVaNnpVck5KMExSRG9KUjQ3SlVDcE16DAgJYggIABAAGAAgAA&is_vtc=1&cid=CAQSHgDnonV5zkbUTeMoFxYPYdR-NKZzZwnbb7JcDuQwPQ&eitems=ChEIgJOqzQYQ6PGtm-i1-djRARIdAC_RpeWIUYJVwHNcBvu2uuLkP9LkqUsmf1v8p3A&random=2930808767",
+    "pragma": "no-cache",
+    "cross-origin-resource-policy": "cross-origin",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-origin": "https://www.airbnb.fr",
+    "content-length": "0",
+    "x-xss-protection": "0",
+    "server": "cafe"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/html; charset=UTF-8",
+  "body": null,
+  "timestamp": "2026-03-06T12:00:41.066Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

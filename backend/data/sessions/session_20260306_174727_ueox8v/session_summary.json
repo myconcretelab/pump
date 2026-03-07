@@ -1,0 +1,63 @@
+{
+  "session": {
+    "id": "session_20260306_174727_ueox8v",
+    "startTime": "2026-03-06T16:51:12.658Z",
+    "duration": 224919,
+    "success": true
+  },
+  "configuration": {
+    "baseUrl": "https://www.airbnb.fr/multicalendar/",
+    "scrollSelector": ".ReactVirtualized__Grid__innerScrollContainer",
+    "scrollConfig": {
+      "count": 5,
+      "distance": 500,
+      "delay": 1000
+    }
+  },
+  "results": {
+    "totalRequests": 189,
+    "totalResponses": 189,
+    "summary": {
+      "totalRequests": 189,
+      "totalResponses": 189,
+      "byStatus": {
+        "200": 145,
+        "204": 44
+      },
+      "byContentType": {
+        "font/woff2": 1,
+        "text/html;charset=utf-8": 1,
+        "text/javascript": 98,
+        "text/css": 1,
+        "image/avif": 9,
+        "unknown": 44,
+        "application/json;charset=utf-8": 34,
+        "text/plain": 1
+      },
+      "byContext": {
+        "before-login": 65,
+        "login": 6,
+        "before-scroll": 73,
+        "during-scroll": 27,
+        "after-scroll": 18
+      }
+    }
+  },
+  "filters": {
+    "applied": {
+      "inclusive": [],
+      "exclusive": []
+    },
+    "explanation": "Responses captured and filtered according to configured rules"
+  },
+  "errors": [
+    {
+      "message": "No errors",
+      "timestamp": "2026-03-06T16:51:12.658Z"
+    }
+  ],
+  "metadata": {
+    "generatedBy": "pump-automation",
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://f02aa.airbnb.fr/?ci=js/3.12.7&q=zzYhuYwNbZimDsZSsU22",
+  "method": "POST",
+  "status": 200,
+  "headers": {
+    "access-control-expose-headers": "Retry-After",
+    "content-encoding": "br",
+    "x-content-type-options": "nosniff",
+    "x-airbnb-sureride": "c1a1o.0.44b71402.1772809837.e74d05a6%%i1c1p.s7tGWrqd%%h1",
+    "date": "Fri, 06 Mar 2026 15:10:37 GMT",
+    "content-type": "text/plain",
+    "x-frame-options": "DENY",
+    "strict-transport-security": "max-age=63072000",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "cachestatus": "on",
+    "timing-allow-origin": "*",
+    "connection": "keep-alive",
+    "access-control-allow-credentials": "true",
+    "referrer-policy": "no-referrer",
+    "akamai-request-bc": "[a=2.20.183.68,b=3880584614,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=IT__MILANO,o=20940],[a=237,c=o]",
+    "access-control-allow-origin": "https://www.airbnb.fr",
+    "content-length": "404",
+    "server": "nginx"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "content-type": "text/plain",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/plain",
+  "body": "”—¡¤ÚÕ=I¼'¿\u0006\u001bÙÖ\u000bL±³\u001aS\u0010\"‚½÷/ûaqf\u0000¸ŸÅ\r×8!uS÷Ø„[²~q*\u0000³ŠÀ\u001dÃ*j(\u0011µŽÆ\u001dÕcginÊïÕ\u0003Ùj!F÷Þƒ\\Ù (2KæØ™[’|:sCöÔ˜AÙ (2FãÉ–\rÁaqfKñÔƒ@‰N<{GìŸÍ\rÃV)t{Àî™x–R\u0004BJ·ø¹zÐl:aVÕÉNÔO=VSáÎÎ\u0004Ÿ`\"QuÍÊ­AË}\u001c]jÎßÆKšM`VLºŠØh¡c\u0003Q\u001aÌä¥hŸh\u0007dËÉ@·^*rWóð˜mËy=CP»ÄŸ{²(\u001fJoïï\u001fºQ#qAÃ€Ê\r×8!uQ÷Ñƒ\rÁaqsMìÛžKžt0u\u0000¸ÆÕ]žl:cKíÓÕ\u0015Ùlb>\u0013 ‘Õ\\˜u!u\u0000¸Ù\u0016Âg2OçÉ–\rÁaqfGðÎž@•8i2T³“Æ\u0001Ï.f!\tãÜ”LÃ-72_®ŸFˆs'PÄÒ‚AŸ8idP÷ØÛ\rs yVíÏ¾KÙ q{fÓÙ¡kËqbGOÅØ›B½u\u0016VE ÀŠR†g",
+  "timestamp": "2026-03-06T15:10:37.509Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

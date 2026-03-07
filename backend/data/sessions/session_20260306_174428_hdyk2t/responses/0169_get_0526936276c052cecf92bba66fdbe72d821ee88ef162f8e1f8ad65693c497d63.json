@@ -1,0 +1,97 @@
+{
+  "url": "https://www.airbnb.fr/api/v3/getMulticalSeasonalRulesetsByRuleGroupIds/0526936276c052cecf92bba66fdbe72d821ee88ef162f8e1f8ad65693c497d63?operationName=getMulticalSeasonalRulesetsByRuleGroupIds&locale=fr&currency=EUR&variables=%7B%22ruleGroupIds%22%3A%5B%22493209357%22%5D%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%220526936276c052cecf92bba66fdbe72d821ee88ef162f8e1f8ad65693c497d63%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=50, cdn-cache; desc=MISS, edge; dur=104, origin; dur=57",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "51",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.91,b=4095866215,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=237,c=o]",
+    "content-length": "287",
+    "x-client-request-id": "1xt3csx1dggabr1i7xls617l0fqk",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 16:44:39 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "d5fZN8_lXsQ3DoEZG3Dk3A==",
+    "x-airbnb-sureride": "c1a1o.0.5bb71402.1772815479.f421f567%%i1c1o%%t1d1o.d5fZN8_lXsQ3DoEZG3Dk3A==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Fri, 06 Mar 2026 16:44:39 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "253c2062e0f61ebc5dedb274e6164e79925744dedae835aaeeced54811f22215",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=159933ecd98ec"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "1mujqu11g6kweq1ulrdqu0kljzts",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "1hkwm4c10908l40s6i21z0e0q5p3",
+    "x-client-request-id": "1xt3csx1dggabr1i7xls617l0fqk",
+    "x-client-version": "0b42ecdf8cd358978c0b375645aa267d97256266",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "patek": {
+        "__typename": "PatekQuery",
+        "getSeasonalRules": {
+          "__typename": "PatekSeasonalRulesResponse",
+          "seasonalRules": [
+            {
+              "__typename": "PatekSeasonalRule",
+              "color": 1,
+              "createdByUserId": "11834769",
+              "id": "493209357",
+              "title": "3 nuits",
+              "availabilityRules": {
+                "__typename": "PatekAvailabilityRule",
+                "closedForCheckin": [],
+                "closedForCheckout": [],
+                "maxNights": {},
+                "minNights": {
+                  "ALL": 3
+                }
+              },
+              "pricingRules": [],
+              "canEdit": true,
+              "canBeReused": true
+            }
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "d5fZN8_lXsQ3DoEZG3Dk3A=="
+    }
+  },
+  "timestamp": "2026-03-06T16:44:39.429Z",
+  "context": "during-scroll",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

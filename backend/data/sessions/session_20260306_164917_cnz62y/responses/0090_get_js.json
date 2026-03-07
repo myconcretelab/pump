@@ -1,0 +1,34 @@
+{
+  "url": "https://www.googletagmanager.com/gtag/js?id=G-2P6Q8PGG16&cx=c&gtm=4e6341",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "cache-control": "private, max-age=900",
+    "content-encoding": "zstd",
+    "cross-origin-resource-policy": "cross-origin",
+    "access-control-allow-credentials": "true",
+    "expires": "Fri, 06 Mar 2026 15:49:22 GMT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "content-length": "162432",
+    "date": "Fri, 06 Mar 2026 15:49:22 GMT",
+    "x-xss-protection": "0",
+    "content-type": "application/javascript; charset=UTF-8",
+    "vary": "Accept-Encoding",
+    "server": "Google Tag Manager",
+    "access-control-allow-headers": "Cache-Control"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "application/javascript; charset=UTF-8",
+  "body": null,
+  "timestamp": "2026-03-06T15:49:22.126Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

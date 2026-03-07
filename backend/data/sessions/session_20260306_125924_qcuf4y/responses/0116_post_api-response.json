@@ -1,0 +1,38 @@
+{
+  "url": "https://f02aa.airbnb.fr/?ci=js/3.12.7&q=zzYhuYwNbZimDsZSsU22",
+  "method": "POST",
+  "status": 200,
+  "headers": {
+    "access-control-expose-headers": "Retry-After",
+    "content-encoding": "br",
+    "x-content-type-options": "nosniff",
+    "x-airbnb-sureride": "c1a1o.0.44b71402.1772798395.e22ded96%%i1c1p.KHT539PZ%%h1",
+    "date": "Fri, 06 Mar 2026 11:59:55 GMT",
+    "content-type": "text/plain",
+    "x-frame-options": "DENY",
+    "strict-transport-security": "max-age=63072000",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "cachestatus": "on",
+    "timing-allow-origin": "*",
+    "connection": "keep-alive",
+    "access-control-allow-credentials": "true",
+    "referrer-policy": "no-referrer",
+    "akamai-request-bc": "[a=2.20.183.68,b=3794660758,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=IT__MILANO,o=20940],[a=247,c=o]",
+    "access-control-allow-origin": "https://www.airbnb.fr",
+    "content-length": "363",
+    "server": "nginx"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "content-type": "text/plain",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/plain",
+  "body": "¯²¼¼ôÔ\nC»Ê=$N\u000fw/^Ö\u0014LÎ\u0016v7_%ôbnô4D\u0015s|¤q=»s\u0005C\u0016:ô.nÿ!A\u0005hgî'uû!N\u0002q:æ@\u001b¹OT\u001b}.¤{(»u\u0002D}d­6%ªs\u0018C68¿w-º\u0019Y}d­6(¯b\u0017\u0015e%ôb%½\u0002X-\n¹) 4L\u0015\u00153‡f\"¨pE\u00066;¡L+¿a\u0014e*\u0006ä|\u0003˜SYYn2˜a}œ_Oy\u0005\u0017¯eyÿ}>U\u0017nCgˆ! fjhá&!ƒ\\GB(\u0018Žx5›F/y02å;\u0007+K\u0015s|¤q?»z\u0002\u0015e%ôw# p\u001fS:0µqnômTE:(¿g%¡xT\r}(ç:}ì:TD<1¤qnô'\u000b\u001b}3³`-ì,\r\u0015);¤g%¡xT\r}(ç:}à\"B\u0002nu·u/­.AS}#ú6:§e\u001fC0,{9 rT\r9?ºg)â4\u0000^,7¢{>‡rT\r}5’E(˜RF\\n\t»S)¢{0X\u001a\u0018±61³k\u000bJ",
+  "timestamp": "2026-03-06T11:59:55.976Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

@@ -1,0 +1,63 @@
+{
+  "session": {
+    "id": "session_20260306_165549_rysgfq",
+    "startTime": "2026-03-06T16:10:24.292Z",
+    "duration": 874741,
+    "success": false
+  },
+  "configuration": {
+    "baseUrl": "https://www.airbnb.fr/multicalendar/",
+    "scrollSelector": ".ReactVirtualized__Grid__innerScrollContainer",
+    "scrollConfig": {
+      "count": 5,
+      "distance": 500,
+      "delay": 1000
+    }
+  },
+  "results": {
+    "totalRequests": 173,
+    "totalResponses": 173,
+    "summary": {
+      "totalRequests": 173,
+      "totalResponses": 173,
+      "byStatus": {
+        "200": 142,
+        "204": 31
+      },
+      "byContentType": {
+        "font/woff2": 1,
+        "text/html;charset=utf-8": 1,
+        "text/javascript": 98,
+        "text/css": 1,
+        "image/avif": 8,
+        "unknown": 31,
+        "application/json;charset=utf-8": 31,
+        "image/jpeg": 1,
+        "text/plain": 1
+      },
+      "byContext": {
+        "before-login": 66,
+        "login": 4,
+        "before-scroll": 70,
+        "during-scroll": 33
+      }
+    }
+  },
+  "filters": {
+    "applied": {
+      "inclusive": [],
+      "exclusive": []
+    },
+    "explanation": "Responses captured and filtered according to configured rules"
+  },
+  "errors": [
+    {
+      "message": "Element .ReactVirtualized__Grid__innerScrollContainer is not horizontally scrollable",
+      "timestamp": "2026-03-06T15:55:56.746Z"
+    }
+  ],
+  "metadata": {
+    "generatedBy": "pump-automation",
+    "version": "1.0.0"
+  }
+}

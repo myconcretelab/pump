@@ -1,0 +1,35 @@
+{
+  "url": "https://f02aa.airbnb.fr/web/v3/zzYhuYwNbZimDsZSsU22/loader_v3.11.3.js",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "br",
+    "etag": "\"7h5MeVKupmdNB9xMe67ptQiKXw8\"",
+    "x-content-type-options": "nosniff",
+    "x-airbnb-sureride": "c1a1c.0.44b71402.1772812160.e85a2586%%h1",
+    "x-amz-cf-id": "iI21sQkTaO07HLtgjUw6uM7CM7ZRQy6NYXwAGCnG1jmkrxcHS7pEww==",
+    "date": "Fri, 06 Mar 2026 15:49:20 GMT",
+    "content-type": "text/javascript; charset=utf-8",
+    "cache-control": "public, max-age=3577, s-maxage=579940",
+    "timing-allow-origin": "*",
+    "cachestatus": "cache",
+    "cross-origin-resource-policy": "cross-origin",
+    "akamai-request-bc": "[a=2.20.183.68,b=3898221958,c=g,n=FR_PAC_MARSEILLE,o=20940]",
+    "access-control-allow-origin": "*",
+    "content-length": "59565",
+    "x-amz-cf-pop": "IAD55-P10",
+    "server": "nginx"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/javascript; charset=utf-8",
+  "body": null,
+  "timestamp": "2026-03-06T15:51:59.805Z",
+  "context": "during-scroll",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

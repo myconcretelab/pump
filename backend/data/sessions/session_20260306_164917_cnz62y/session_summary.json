@@ -1,0 +1,75 @@
+{
+  "session": {
+    "id": "session_20260306_164917_cnz62y",
+    "startTime": "2026-03-06T15:52:00.858Z",
+    "duration": 163225,
+    "success": false
+  },
+  "configuration": {
+    "baseUrl": "https://www.airbnb.fr/multicalendar/",
+    "scrollSelector": ".ReactVirtualized__Grid__innerScrollContainer",
+    "scrollConfig": {
+      "count": 5,
+      "distance": 500,
+      "delay": 1000
+    }
+  },
+  "results": {
+    "totalRequests": 273,
+    "totalResponses": 197,
+    "summary": {
+      "totalRequests": 273,
+      "totalResponses": 197,
+      "byStatus": {
+        "200": 135,
+        "204": 52,
+        "302": 10
+      },
+      "byContentType": {
+        "text/html;charset=utf-8": 4,
+        "font/woff2": 3,
+        "text/javascript": 77,
+        "image/webp": 1,
+        "text/css": 1,
+        "unknown": 55,
+        "application/json;charset=utf-8": 19,
+        "image/avif": 2,
+        "application/javascript;charset=UTF-8": 1,
+        "application/javascript; charset=utf-8": 1,
+        "text/javascript; charset=utf-8": 2,
+        "application/javascript; charset=UTF-8": 2,
+        "text/plain; charset=utf-8": 3,
+        "text/plain;charset=utf-8": 4,
+        "image/png": 2,
+        "text/plain": 4,
+        "image/gif": 8,
+        "text/html; charset=UTF-8": 5,
+        "application/json; charset=UTF-8": 2,
+        "application/json": 1
+      },
+      "byContext": {
+        "before-login": 22,
+        "login": 130,
+        "before-scroll": 1,
+        "during-scroll": 44
+      }
+    }
+  },
+  "filters": {
+    "applied": {
+      "inclusive": [],
+      "exclusive": []
+    },
+    "explanation": "Responses captured and filtered according to configured rules"
+  },
+  "errors": [
+    {
+      "message": "Element not found: .ReactVirtualized__Grid__innerScrollContainer",
+      "timestamp": "2026-03-06T15:50:26.709Z"
+    }
+  ],
+  "metadata": {
+    "generatedBy": "pump-automation",
+    "version": "1.0.0"
+  }
+}

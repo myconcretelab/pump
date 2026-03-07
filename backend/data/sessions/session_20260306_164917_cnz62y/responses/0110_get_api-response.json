@@ -1,0 +1,35 @@
+{
+  "url": "https://ct.pinterest.com/v3/?tid=2614425740829&event=PageVisit&ed[product_category]=ENTER+DATA+VALUE&ed[product_price]=ENTER+DATA+VALUE&pd[em]=&noscript=1&gtmcb=316931140",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "x-pinterest-rid-128bit": "b44413f66b7a28e76c8727f9e564f2e1",
+    "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+    "alt-svc": "h3=\":443\"; ma=604800",
+    "date": "Fri, 06 Mar 2026 15:49:28 GMT",
+    "content-type": "image/gif",
+    "strict-transport-security": "max-age=31536000 ; includeSubDomains ; preload",
+    "cache-control": "no-cache,no-store,must-revalidate,max-age=0",
+    "pragma": "no-cache",
+    "x-envoy-upstream-service-time": "0",
+    "x-cdn": "akamai",
+    "referrer-policy": "origin",
+    "pinterest-version": "4bd129c511cd39d756b3010b07e59fabdfc1e22f",
+    "access-control-allow-origin": "*",
+    "content-length": "35",
+    "akamai-grn": "0.5cb71402.1772812168.fa108b4b",
+    "x-pinterest-rid": "7820263232201093"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "image/gif",
+  "body": null,
+  "timestamp": "2026-03-06T15:49:28.901Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

@@ -1,0 +1,219 @@
+{
+  "url": "https://www.airbnb.fr/api/v3/Header/bb590cf8c21b62e4b5122e1cd19969f1f1df72832040a335fd45af52597440e4?operationName=Header&locale=fr&currency=EUR&variables=%7B%22cdnCacheSafe%22%3Afalse%2C%22hasLoggedIn%22%3Afalse%2C%22isInitialLoad%22%3Afalse%2C%22source%22%3A%22EXPLORE%22%2C%22supportsM13ListingsSetupFlow%22%3Atrue%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22bb590cf8c21b62e4b5122e1cd19969f1f1df72832040a335fd45af52597440e4%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=23, cdn-cache; desc=MISS, edge; dur=107, origin; dur=32",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "25",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.79,b=1604946620,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=237,c=o]",
+    "content-length": "789",
+    "x-client-request-id": "1rwda840zfiguz1m7k24t05chqmw",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 15:49:20 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "7s4oOfZwilPlnMgtIEx3Ew==",
+    "x-airbnb-sureride": "c1a1o.0.4fb71402.1772812160.5fa98abc%%i1c1o%%t1d1o.7s4oOfZwilPlnMgtIEx3Ew==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Fri, 06 Mar 2026 15:49:20 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "253c2062e0f61ebc5dedb274e6164e79925744dedae835aaeeced54811f22215",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=92dc02715fee5"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform-version": "\"26.3.0\"",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-dpr": "1",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "sec-ch-viewport-width": "1280",
+    "x-airbnb-network-log-link": "0xp4hss18q105i0ijd59p1d9zqzt",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "ect": "4g",
+    "referer": "https://www.airbnb.fr/login?redirect_url=%2Fmulticalendar%2F",
+    "sec-ch-device-memory": "8",
+    "x-airbnb-client-trace-id": "06vxd8s0o137bs15u868m0qtv34h",
+    "x-client-request-id": "1rwda840zfiguz1m7k24t05chqmw",
+    "x-client-version": "7c247326a4692d91255b9d05a82b7af5b96c7ab3",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "viewer": null,
+      "presentation": {
+        "__typename": "RootPresentationContainer",
+        "header": {
+          "__typename": "Header",
+          "topLevelItemGroup": {
+            "__typename": "HeaderItemGroup",
+            "items": [
+              {
+                "__typename": "HeaderItem",
+                "itemId": "BECOME_A_HOST",
+                "loggingId": "simpleHeader.loggedOut.becomeAHost",
+                "url": null,
+                "type": "BECOME_A_HOST",
+                "text": "Devenir hôte"
+              },
+              {
+                "__typename": "HeaderItem",
+                "itemId": "LANGUAGE_AND_CURRENCY",
+                "loggingId": "simpleHeader.loggedOut.localeSettingsMenu",
+                "url": null,
+                "type": "LOCALE",
+                "text": null
+              }
+            ]
+          },
+          "menuItemGroups": [
+            {
+              "__typename": "HeaderItemGroup",
+              "groupId": "SECONDARY_MENU",
+              "items": [
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": null,
+                  "hasBadge": false,
+                  "icon": "COMPACT_HOST_HELP_ALT",
+                  "isNew": null,
+                  "itemId": "HELP",
+                  "loggingId": "simpleHeader.loggedOut.profileMenu.help",
+                  "primary": false,
+                  "text": "Centre d'aide",
+                  "type": "HELP",
+                  "url": "/help"
+                }
+              ]
+            },
+            {
+              "__typename": "HeaderItemGroup",
+              "groupId": "TERTIARY_MENU",
+              "items": [
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": "Devenir hôte et gagner des revenus supplémentaires, c'est facile.",
+                  "hasBadge": false,
+                  "icon": null,
+                  "isNew": null,
+                  "itemId": "BECOME_A_HOST",
+                  "loggingId": "userProfile.BecomeAHostBanner",
+                  "primary": false,
+                  "text": "Devenir hôte",
+                  "type": "BECOME_A_HOST",
+                  "url": null
+                }
+              ]
+            },
+            {
+              "__typename": "HeaderItemGroup",
+              "groupId": "QUATERNARY_MENU",
+              "items": [
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": null,
+                  "hasBadge": false,
+                  "icon": null,
+                  "isNew": null,
+                  "itemId": "HOST_REFERRALS",
+                  "loggingId": "simpleHeader.loggedOut.profileMenu.referAHost",
+                  "primary": false,
+                  "text": "Parrainer un hôte",
+                  "type": "LINK",
+                  "url": "/refer?r=67"
+                },
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": null,
+                  "hasBadge": false,
+                  "icon": null,
+                  "isNew": null,
+                  "itemId": "FIND_A_COHOST",
+                  "loggingId": "simpleHeader.loggedOut.profileMenu.findACohost",
+                  "primary": false,
+                  "text": "Trouver un co-hôte",
+                  "type": "LINK",
+                  "url": "/co-hosts/home"
+                },
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": null,
+                  "hasBadge": false,
+                  "icon": null,
+                  "isNew": null,
+                  "itemId": "GIFTCARDS",
+                  "loggingId": "simpleHeader.loggedOut.profileMenu.giftcards",
+                  "primary": false,
+                  "text": "Cartes cadeaux",
+                  "type": "LINK",
+                  "url": "/giftcards"
+                }
+              ]
+            },
+            {
+              "__typename": "HeaderItemGroup",
+              "groupId": "QUINARY_MENU",
+              "items": [
+                {
+                  "__typename": "HeaderItem",
+                  "badgeCount": null,
+                  "caption": null,
+                  "hasBadge": false,
+                  "icon": null,
+                  "isNew": null,
+                  "itemId": "LOGIN_OR_SIGNUP",
+                  "loggingId": "simpleHeader.loggedOut.profileMenu.logInOrSignUp",
+                  "primary": false,
+                  "text": "Se connecter ou s'inscrire",
+                  "type": "LINK",
+                  "url": "/signup_login"
+                }
+              ]
+            }
+          ],
+          "avatarImageUrl": null
+        },
+        "supplyTypeSelector": {
+          "__typename": "SupplyTypeSelectorPresentationContainer",
+          "isInPrioritizedExperienceMarket": false,
+          "isInPrioritizedServiceMarket": false
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "7s4oOfZwilPlnMgtIEx3Ew=="
+    }
+  },
+  "timestamp": "2026-03-06T15:49:20.689Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

@@ -1,0 +1,4143 @@
+{
+  "filename": "0150_get_a0ebb5dfb64538ef79e618b28041c5a4f2ef1c491861509eb6b91ef4191b543c.json",
+  "url": "https://www.airbnb.fr/api/v3/multicalListingsAndCalendars/a0ebb5dfb64538ef79e618b28041c5a4f2ef1c491861509eb6b91ef4191b543c?operationName=multicalListingsAndCalendars&locale=fr&currency=EUR&variables=%7B%22offset%22%3A0%2C%22limit%22%3A6%2C%22startDate%22%3A%222026-03-15%22%2C%22endDate%22%3A%222026-03-27%22%2C%22calendarFields%22%3A%5B%22AVAILABILITY%22%2C%22AVAILABILITY_DETAILS%22%2C%22REASONS_FOR_UNAVAILABILITY%22%2C%22HOST_PRICE%22%2C%22SMART_PRICING_SUGGESTIONS%22%2C%22HOST_PRICE_EXPLANATIONS%22%2C%22PROMOTION%22%2C%22LUX_INSPECTIONS%22%2C%22BOOKABILITY%22%2C%22ANCHOR_PRICE%22%5D%2C%22filters%22%3A%7B%22amenityIds%22%3Anull%2C%22apiStatuses%22%3Anull%2C%22bathrooms%22%3Anull%2C%22beds%22%3Anull%2C%22bedrooms%22%3Anull%2C%22cities%22%3Anull%2C%22instantBook%22%3Anull%2C%22listingIds%22%3Anull%2C%22ownerships%22%3Anull%2C%22propertyTypeGroups%22%3Anull%2C%22propertyTypeIds%22%3Anull%2C%22publishedApiSyncCategories%22%3Anull%2C%22statuses%22%3Anull%2C%22tags%22%3Anull%2C%22pttAllowed%22%3Anull%2C%22updatedAfter%22%3Anull%2C%22updatedBefore%22%3Anull%2C%22visibilities%22%3Anull%2C%22vlsVerificationRequired%22%3Anull%2C%22tierIds%22%3A%5B0%2C1%2C2%5D%7D%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22a0ebb5dfb64538ef79e618b28041c5a4f2ef1c491861509eb6b91ef4191b543c%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=296, cdn-cache; desc=MISS, edge; dur=123, origin; dur=304",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "298",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.22.254.178,b=209108476,c=g,n=FR_IDF_PARIS,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=217,c=o]",
+    "content-length": "4256",
+    "x-client-request-id": "1gshaz51b1wwkl0xl8srq1i9xclg",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Sat, 07 Mar 2026 13:08:22 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "aVTquhbrxcy85f1123OMsQ==",
+    "x-airbnb-sureride": "c1a1o.0.b2fe1602.1772888902.c76bdfc%%i1c1o%%t1d1o.aVTquhbrxcy85f1123OMsQ==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Sat, 07 Mar 2026 13:08:22 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "1c74afc8c557a36736d6d5ad6a41633cc419fb123b5b3907fbb24dc2dd617e66",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=55d19adbf0d71"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "0g93d5n1o01ld516r2iwc18975m3",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "14vop7m1mbgrqb0kvk2np1g4k31o",
+    "x-client-request-id": "1gshaz51b1wwkl0xl8srq1i9xclg",
+    "x-client-version": "1c8c00a20c7a421e67299d22a9a6d3fc15a43e5f",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "patek": {
+        "__typename": "PatekQuery",
+        "getMultiCalendarListingsAndCalendars": {
+          "__typename": "PatekMultiCalendarListingsAndCalendarsResponse",
+          "hostCalendarsResponse": {
+            "__typename": "PatekHostCalendarsResponse",
+            "calendars": [
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-15",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-16",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-17",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-18",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-19",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-20",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-21",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-22",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-23",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-24",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": "Sigrid ",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": "HOST_BUSY",
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": true,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-25",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-26",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-27",
+                    "listingId": "16674752",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 162,
+                        "confirmationCode": "HMREYX8PTP",
+                        "endDate": "2026-03-29",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Aubert",
+                          "lastName": "Sébastien",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/pictures/user/774db6f1-7d6b-45fe-872b-1551e441debc.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/774db6f1-7d6b-45fe-872b-1551e441debc.jpg?aki_policy=profile_small",
+                          "userId": "59264565"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "16674752",
+                        "nights": 2,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-27",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "16674752",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Gîte de la Grée, charme en Brocéliande",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": null
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              },
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-15",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-16",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-17",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-18",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-19",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-20",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-21",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-22",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-23",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-24",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-25",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-26",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 4,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-27",
+                    "listingId": "1182344118629001592",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 230,
+                      "nativeAdjustedPrice": 230,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "default",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "230 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": "default_busy",
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "1182344118629001592",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Demeure de charme à Brocéliande",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": null
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              },
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-15",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-16",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-17",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-18",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-19",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": "COLLE MOQUETTE DEFINITIF",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-20",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 844,
+                        "confirmationCode": "HMXKY9WDEK",
+                        "endDate": "2026-03-22",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Célie",
+                          "lastName": "Augé",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/7b1510e3-5df4-4bd6-a21e-02fe1d424452.jpeg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/User/original/7b1510e3-5df4-4bd6-a21e-02fe1d424452.jpeg?aki_policy=profile_small",
+                          "userId": "14121807"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "48504640",
+                        "nights": 2,
+                        "numberOfAdults": 15,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 15,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-20",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-21",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 844,
+                        "confirmationCode": "HMXKY9WDEK",
+                        "endDate": "2026-03-22",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Célie",
+                          "lastName": "Augé",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/7b1510e3-5df4-4bd6-a21e-02fe1d424452.jpeg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/User/original/7b1510e3-5df4-4bd6-a21e-02fe1d424452.jpeg?aki_policy=profile_small",
+                          "userId": "14121807"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "48504640",
+                        "nights": 2,
+                        "numberOfAdults": 15,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 15,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-20",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-22",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-23",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-24",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-25",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-26",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-27",
+                    "listingId": "48504640",
+                    "luxuryInspections": [],
+                    "notes": "GdF  - Veugeois 0669135797\nPaye 1065€ (ménage déjà réglé)\n10 adultes, 1 enfant et 2 bébés\n\n",
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 360,
+                      "nativeAdjustedPrice": 360,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "360 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": {
+                        "__typename": "PatekExternalCalendarEvent",
+                        "name": "Gites de France",
+                        "notes": null,
+                        "scrubbed": false
+                      }
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "48504640",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Un été au coeur de Brocéliande, légendes et nature",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": null
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              },
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-15",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-16",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-17",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-18",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-19",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-20",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 492,
+                        "confirmationCode": "HM4XDH4DY4",
+                        "endDate": "2026-03-21",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Sandra",
+                          "lastName": "Muller",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/users/9853859/profile_pic/1432730747/original.jpg?aki_policy=profile_small",
+                          "userId": "9853859"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "6668903",
+                        "nights": 6,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-15",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-21",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-22",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-23",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-24",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-25",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-26",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-27",
+                    "listingId": "6668903",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "6668903",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Gîte de Tante Phonsine, charme à Brocéliande",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": null
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              },
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-15",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-16",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-17",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-18",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-19",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-20",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-21",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-22",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-23",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-24",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-25",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-26",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-27",
+                    "listingId": "1256595615494549883",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 69,
+                      "nativeAdjustedPrice": 69,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "69 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": null,
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "1256595615494549883",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Petit nid douillet à Brocéliande",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": 365
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              },
+              {
+                "__typename": "PatekCalendarData",
+                "days": [
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-15",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-15",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 139,
+                        "confirmationCode": "HMDR9CXBQ9",
+                        "endDate": "2026-03-16",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Gisele",
+                          "lastName": "Abraham",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=G&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "thumbnailUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=G&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "userId": "745082337"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 2,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-14",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": false,
+                    "day": "2026-03-16",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-16",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [
+                      {
+                        "__typename": "PatekMinNightsUnbookableReason",
+                        "suggestedMinNights": "1"
+                      }
+                    ],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-17",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-17",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 209,
+                        "confirmationCode": "HMDB2YQH8C",
+                        "endDate": "2026-03-20",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Théliau",
+                          "lastName": "Willenbucher",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "thumbnailUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "userId": "589475663"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 3,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-17",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-18",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-18",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 209,
+                        "confirmationCode": "HMDB2YQH8C",
+                        "endDate": "2026-03-20",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Théliau",
+                          "lastName": "Willenbucher",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "thumbnailUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "userId": "589475663"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 3,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-17",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-19",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-19",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 209,
+                        "confirmationCode": "HMDB2YQH8C",
+                        "endDate": "2026-03-20",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Théliau",
+                          "lastName": "Willenbucher",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "thumbnailUrl": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_t=T&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff",
+                          "userId": "589475663"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 3,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-17",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-20",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-20",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 140,
+                        "confirmationCode": "HMWQJ44JWQ",
+                        "endDate": "2026-03-22",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Guillaume",
+                          "lastName": "Clairel",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/pictures/user/User-555749472/original/a58bb715-49db-4e29-b990-b413416c1e21.jpeg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/User-555749472/original/a58bb715-49db-4e29-b990-b413416c1e21.jpeg?aki_policy=profile_small",
+                          "userId": "555749472"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 2,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-20",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": false,
+                    "bookable": false,
+                    "day": "2026-03-21",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-21",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": {
+                      "__typename": "PatekUnavailabilityReasons",
+                      "blackoutReason": null,
+                      "busySubtype": null,
+                      "isAvailabilityLocked": null,
+                      "expiredReservation": null,
+                      "reservation": {
+                        "__typename": "PatekReservationData",
+                        "basePrice": 140,
+                        "confirmationCode": "HMWQJ44JWQ",
+                        "endDate": "2026-03-22",
+                        "guestInfo": {
+                          "__typename": "PatekReservationGuestInfo",
+                          "firstName": "Guillaume",
+                          "lastName": "Clairel",
+                          "location": null,
+                          "profilePictureUrl": "https://a0.muscache.com/im/pictures/user/User-555749472/original/a58bb715-49db-4e29-b990-b413416c1e21.jpeg?aki_policy=profile_x_medium",
+                          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/User-555749472/original/a58bb715-49db-4e29-b990-b413416c1e21.jpeg?aki_policy=profile_small",
+                          "userId": "555749472"
+                        },
+                        "hostCurrency": "EUR",
+                        "hostingId": "43504621",
+                        "nights": 2,
+                        "numberOfAdults": 2,
+                        "numberOfChildren": 0,
+                        "numberOfGuests": 2,
+                        "numberOfInfants": 0,
+                        "pendingPaymentHoursRemaining": null,
+                        "startDate": "2026-03-20",
+                        "status": 1,
+                        "statusString": "Acceptée",
+                        "scrubbed": false,
+                        "canMessageGuest": true
+                      },
+                      "rule": null,
+                      "hostBusy": false,
+                      "importedEvent": null
+                    },
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-22",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-22",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-23",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-23",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-24",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-24",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-25",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-25",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-26",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-26",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  },
+                  {
+                    "__typename": "PatekCalendarDay",
+                    "availabilityConstraints": {
+                      "__typename": "PatekAvailabilityConstraints",
+                      "minNightsRule": {
+                        "__typename": "PatekLengthOfStayRule",
+                        "numNights": 2,
+                        "ruleType": "LISTING_GLOBAL"
+                      }
+                    },
+                    "available": true,
+                    "bookable": true,
+                    "day": "2026-03-27",
+                    "listingId": "43504621",
+                    "luxuryInspections": [],
+                    "notes": null,
+                    "price": {
+                      "__typename": "PatekPriceHostView",
+                      "day": "2026-03-27",
+                      "nativePrice": 59,
+                      "nativeAdjustedPrice": 59,
+                      "nativeCurrency": "EUR",
+                      "pricingRuleAdjustmentTypes": [],
+                      "shouldHidePrice": false,
+                      "smartPricingNativePrice": null,
+                      "smartPricingOptedIn": false,
+                      "smartPricingOverridden": false,
+                      "type": "custom",
+                      "isLastSmartPricingDay": null,
+                      "lastMinuteDiscount": null,
+                      "syntheticDailyPrice": false,
+                      "discountPromoInclusivePrice": "59 €"
+                    },
+                    "smartPricingDetails": null,
+                    "unavailabilityReasons": null,
+                    "unbookableReasons": [],
+                    "promotions": null
+                  }
+                ],
+                "listingId": "43504621",
+                "startDate": "2026-03-15",
+                "endDate": "2026-03-27",
+                "listingAttributes": {
+                  "__typename": "PatekListingAttributes",
+                  "listingName": "Petit nid douillet, le gîte de l'oncle Edmond",
+                  "tierId": 0,
+                  "eligibleForDemandTrend": false,
+                  "luxuryPricingTiers": null,
+                  "calendarRules": {
+                    "__typename": "PatekCalendarRules",
+                    "maxDaysNotice": null
+                  }
+                },
+                "permissionMeta": {
+                  "__typename": "PatekPermissionMeta",
+                  "userCalendarPermissions": [
+                    "EDIT_PRICING",
+                    "VIEW_PRICING",
+                    "EDIT_AVAILABILITY",
+                    "VIEW_AVAILABILITY",
+                    "CAN_MANAGE"
+                  ],
+                  "uiSpecializationConfig": {
+                    "__typename": "PatekUiSpecializationConfig",
+                    "editPanelPrice": "INTERACTIVE",
+                    "editPanelAvailability": "INTERACTIVE",
+                    "editPanelRuleSet": "INTERACTIVE",
+                    "listingInternalName": "INTERACTIVE",
+                    "editPanel": "INTERACTIVE",
+                    "calendarNotes": "INTERACTIVE"
+                  }
+                }
+              }
+            ]
+          },
+          "multiCalendarListingsAttributes": {
+            "__typename": "PatekMultiCalendarListingsAttributes",
+            "multiCalendarListings": [
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "16674752",
+                "listingNameOrPlaceholderName": "Gîte de la Grée, charme en Brocéliande",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-16674752/original/dac26471-65de-42d2-88ec-2938890ed71f.jpeg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "La Grée",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              },
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "1182344118629001592",
+                "listingNameOrPlaceholderName": "Demeure de charme à Brocéliande",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDg1MDQ2NDA%3D/original/fbf4b8e9-8d9b-4f3d-85dc-2870ee2aa570.jpeg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "Liberté 8 personnes",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              },
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "48504640",
+                "listingNameOrPlaceholderName": "Un été au coeur de Brocéliande, légendes et nature",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/25f02262-3242-47ee-89c8-a65f3c33a402.jpg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "Liberté - 15 personnes",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              },
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "6668903",
+                "listingNameOrPlaceholderName": "Gîte de Tante Phonsine, charme à Brocéliande",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NjY2ODkwMw==/original/319d22ba-1dd8-4ce6-959f-5b9879107bec.jpeg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "Gîte Phonsine",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              },
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "1256595615494549883",
+                "listingNameOrPlaceholderName": "Petit nid douillet à Brocéliande",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1256595615494549883/original/df14f66f-8a2d-4929-80f9-12304fa8be2c.jpeg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "La Grée 2 pers. + animal 30€",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              },
+              {
+                "__typename": "PatekListingAttributes",
+                "listingActive": true,
+                "listingCurrency": "EUR",
+                "listingHostUserId": null,
+                "listingId": "43504621",
+                "listingNameOrPlaceholderName": "Petit nid douillet, le gîte de l'oncle Edmond",
+                "listingThumbnailUrl": "https://a0.muscache.com/im/pictures/f7f66d53-6fd5-4cde-981e-d8a008e7b01a.jpg?aki_policy=small",
+                "ltrThreshold": null,
+                "nickname": "Gîte Edmond",
+                "platformPowered": false,
+                "smartPricingV2Available": false,
+                "pricingAvailabilityModelType": "STANDARD"
+              }
+            ],
+            "metadata": {
+              "__typename": "PatekMultiCalendarListingsMetadata",
+              "recordCount": 6
+            }
+          }
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "aVTquhbrxcy85f1123OMsQ=="
+    }
+  },
+  "timestamp": "2026-03-07T13:08:22.766Z",
+  "context": "during-scroll",
+  "keptByFilters": true,
+  "filterExplanation": "No filters applied, keeping all responses"
+}

@@ -1,0 +1,42 @@
+{
+  "filename": "0112_get_319d22ba-1dd8-4ce6-959f-5b9879107bec.jpeg.json",
+  "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NjY2ODkwMw==/original/319d22ba-1dd8-4ce6-959f-5b9879107bec.jpeg?aki_policy=small",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "etag": "\"8a8b3186f190fa235fdeb9cb5c3647de\"",
+    "x-content-type-options": "nosniff",
+    "access-control-allow-methods": "GET",
+    "accept-ch-lifetime": "2592000",
+    "expires": "Sat, 07 Mar 2026 11:22:05 GMT",
+    "x-airbnb-sureride": "c1a1o.0.d279cc17.1772880724.17696389%%h1",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "server-timing": "cdn-cache; desc=HIT, edge; dur=185, origin; dur=UNSET",
+    "date": "Sat, 07 Mar 2026 10:52:05 GMT",
+    "last-modified": "Thu, 01 Jan 1970 00:00:01 GMT",
+    "content-type": "image/jpeg",
+    "strict-transport-security": "max-age=10886400; includeSubDomains",
+    "cache-control": "private, max-age=1800",
+    "cachestatus": "origin",
+    "timing-allow-origin": "*",
+    "accept-ch": "device-memory, ect",
+    "quic-version": "0x00000001",
+    "akamai-request-bc": "[a=23.204.121.210,b=392782729,c=g,n=FR_IDF_PARIS,o=20940],[c=p,n=FR_IDF_PARIS,o=20940]",
+    "access-control-allow-origin": "*",
+    "content-length": "7772",
+    "server": "Akamai Image Server"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "image/jpeg",
+  "body": null,
+  "timestamp": "2026-03-07T10:52:05.227Z",
+  "context": "before-scroll",
+  "keptByFilters": true,
+  "filterExplanation": "No filters applied, keeping all responses"
+}

@@ -1,0 +1,33 @@
+{
+  "url": "https://ad.doubleclick.net/activity;src=4620401;type=gen;cat=airbn0;ord=1;num=1456111022;gtm=45j91e6341h1v874143154z8551874z9894587894za20gzb551874zd551874;dc_pre=1;u21=visitor;dma=1;dma_cps=a;npa=0;gcs=G111;gcu=1;gcd=13n3nPn2n5l1;uaa=arm;uab=64;uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0;uamb=0;uam=;uap=macOS;uapv=26.3.0;uaw=0;pscdl=denied;auiddc=920003433.1772812169;em=tv.1;tag_exp=103116026~103200004~115616985~115938465~115938468~116024733~116024736~117215455~117484252~117625640~117625641;_tu=DA;s3p=1;~oref=https%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F?",
+  "method": "GET",
+  "status": 302,
+  "headers": {
+    "cache-control": "no-cache, must-revalidate",
+    "timing-allow-origin": "*",
+    "location": "https://adservice.google.com/ddm/fls/z/src=4620401;type=gen;cat=airbn0;ord=1;num=1456111022;gtm=45j91e6341h1v874143154z8551874z9894587894za20gzb551874zd551874;dc_pre=1;u21=visitor;dma=1;dma_cps=a;npa=0;gcs=G111;gcu=1;gcd=13n3nPn2n5l1;uaa=arm;uab=64;uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0;uamb=0;uam=;uap=macOS;uapv=26.3.0;uaw=0;pscdl=denied;auiddc=*;em=tv.*;tag_exp=103116026~103200004~115616985~115938465~115938468~116024733~116024736~117215455~117484252~117625640~117625641;_tu=DA;s3p=1;~oref=https%3A%2F%2Fwww.airbnb.fr%2Flogin%3Fredirect_url%3D%252Fmulticalendar%252F",
+    "pragma": "no-cache",
+    "cross-origin-resource-policy": "cross-origin",
+    "x-content-type-options": "nosniff",
+    "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "p3p": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"",
+    "content-length": "0",
+    "date": "Fri, 06 Mar 2026 15:49:29 GMT",
+    "x-xss-protection": "0",
+    "content-type": "text/html; charset=UTF-8",
+    "server": "cafe"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/html; charset=UTF-8",
+  "body": null,
+  "timestamp": "2026-03-06T15:49:29.026Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

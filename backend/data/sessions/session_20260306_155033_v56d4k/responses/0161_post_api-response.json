@@ -1,0 +1,38 @@
+{
+  "url": "https://f02aa.airbnb.fr/?ci=js/3.12.7&q=zzYhuYwNbZimDsZSsU22",
+  "method": "POST",
+  "status": 200,
+  "headers": {
+    "access-control-expose-headers": "Retry-After",
+    "content-encoding": "br",
+    "x-content-type-options": "nosniff",
+    "x-airbnb-sureride": "c1a1o.0.44b71402.1772808699.e6c5869b%%i1c1p.2XL6An5T%%h1",
+    "date": "Fri, 06 Mar 2026 14:51:39 GMT",
+    "content-type": "text/plain",
+    "x-frame-options": "DENY",
+    "strict-transport-security": "max-age=63072000",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "cachestatus": "on",
+    "timing-allow-origin": "*",
+    "connection": "keep-alive",
+    "access-control-allow-credentials": "true",
+    "referrer-policy": "no-referrer",
+    "akamai-request-bc": "[a=2.20.183.68,b=3871704731,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=IT__MILANO,o=20940],[a=237,c=o]",
+    "access-control-allow-origin": "https://www.airbnb.fr",
+    "content-length": "503",
+    "server": "nginx"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "content-type": "text/plain",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/plain",
+  "body": "y|†ì‚Õ`J¦Ž|K¶¹x·¯¤†X\"\u0003’gIä£SÐ° ½åñC|›’hw\fß/›x„L\u0015%Ü(=Äï½.Ž\u000e\u0007¶êù‹\u0011äa“ïÇÆ1IOñÿ\u0002þí`ºs\u0014¢ø¾\txa’B‰%\\\u0003rÊ/ó\n\u0012*Ìüß‹k¯µo«“4PÊi±öTSgäüÄBÊÔ\"q]ÆÎæn“„1\"\u0012°\u000bÕÔnqVÓËözÎbj^ÑÅòlƒ`=\u0013°Þè`Á„;7\u0012‡ˆ·`‹v:\u0003’°+×Ÿ72\u0013“ª`‹v7\u0006æxÊÔ\":\u0014ˆ«0å™?6\tÆÆæ\u0011É„\u001b\u0005\u001fª”ò\ræº#4+Š­¶wÙ,\u0005Wžœ\u0004ô§\u0002>Q´½½0úœf\u0006\u0017¨–¢\rÀÅf\u0010\u0002«¬ƒpÕ¤#==…×ˆ\u0003ä¼f4Pœ»ö7‚§\u001b4_¯ž½wÁe\u001e\u0004¾°‡\u0004ú‡>'Q“Èˆ6é·\u0016\u0019V¨‘½7õµ?k&ÙÁæn“„1 \u0012ˆˆæxÊÔ7<\t‚• 'ß•1q]ŸÞ¶'ÇŸ':\bŠÞþ`ÇÇzbEÈÞ·!Þ„1q]ÔÒý{ÌÚv>\u0002æxÊÔ\"6\u0015—•«,“Ìv%VÊÍêv…Ãex\u0006…Ÿ§z†’v.KÆŠ­1Ø‚;!!‹‰ª&“Ì !\u0012Ðæ4Ø…='\b–µ `‹Ô?\u00176€ª€rÚÇ\u0003> ©\u0004Þ³\u00124E™¹?Ì",
+  "timestamp": "2026-03-06T14:51:39.851Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

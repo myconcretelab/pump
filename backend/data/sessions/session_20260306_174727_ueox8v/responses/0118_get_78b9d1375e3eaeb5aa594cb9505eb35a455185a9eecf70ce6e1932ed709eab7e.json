@@ -1,0 +1,76 @@
+{
+  "url": "https://www.airbnb.fr/api/v3/UserMetastoreWebQuery/78b9d1375e3eaeb5aa594cb9505eb35a455185a9eecf70ce6e1932ed709eab7e?operationName=UserMetastoreWebQuery&locale=fr&currency=EUR&variables=%7B%22eventKey%22%3A%22seen_tips_fab%22%2C%22eventNamespace%22%3A%22HOST_TASK_SYSTEM%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%2278b9d1375e3eaeb5aa594cb9505eb35a455185a9eecf70ce6e1932ed709eab7e%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "br",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=56, cdn-cache; desc=MISS, edge; dur=110, origin; dur=63",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "57",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.91,b=4097105480,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_ASHBURN,o=20940],[a=217,c=o]",
+    "content-length": "125",
+    "x-client-request-id": "0ckbk7k0j225g11ylc5xn16lqvq1",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 16:47:31 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "3f5bZXTcjdcIIaUpPkWEKQ==",
+    "x-airbnb-sureride": "c1a1o.0.5bb71402.1772815651.f434de48%%i1c1o%%t1d1o.3f5bZXTcjdcIIaUpPkWEKQ==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Fri, 06 Mar 2026 16:47:31 GMT",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "253c2062e0f61ebc5dedb274e6164e79925744dedae835aaeeced54811f22215",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=92dc02715fee5"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "1x5qce30d2zgh31ixvrxg1c0l35m",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "0i20d0t0hh7pq50bqxoz31t2jy0x",
+    "x-client-request-id": "0ckbk7k0j225g11ylc5xn16lqvq1",
+    "x-client-version": "0b42ecdf8cd358978c0b375645aa267d97256266",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "viewer": {
+        "__typename": "Viewer",
+        "userMetadata": {
+          "__typename": "UserMetadataBooleanValue",
+          "booleanValue": true
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "3f5bZXTcjdcIIaUpPkWEKQ=="
+    }
+  },
+  "timestamp": "2026-03-06T16:47:31.233Z",
+  "context": "before-scroll",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

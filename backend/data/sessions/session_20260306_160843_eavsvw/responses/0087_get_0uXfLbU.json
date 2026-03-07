@@ -1,0 +1,37 @@
+{
+  "url": "https://f02aa.airbnb.fr/azILi/e6PYw9/0uXfLbU?q=zzYhuYwNbZimDsZSsU22",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "x-robots-tag": "noindex",
+    "access-control-expose-headers": "Retry-After",
+    "content-encoding": "br",
+    "x-content-type-options": "nosniff",
+    "x-airbnb-everest-device-id": "1772809727.EAZTcyNTM4OTkxYzY2Nj.Vmqk27pueihNilSv8kHABQuP6Ykec4wGnuN-YIBeQNg",
+    "x-airbnb-sureride": "c1a1o.0.44b71402.1772809727.e74045d5%%i1c1p.dyB4E7hJ%%h1",
+    "date": "Fri, 06 Mar 2026 15:08:47 GMT",
+    "content-type": "text/plain; charset=utf-8",
+    "x-frame-options": "DENY",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "cache-control": "private, max-age=31536000",
+    "timing-allow-origin": "*",
+    "cachestatus": "cache",
+    "referrer-policy": "no-referrer",
+    "akamai-request-bc": "[a=2.20.183.68,b=3879749077,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=IT__MILANO,o=20940],[a=217,c=o]",
+    "access-control-allow-origin": "*",
+    "content-length": "91",
+    "server": "nginx"
+  },
+  "requestHeaders": {
+    "sec-ch-ua-platform": "\"macOS\"",
+    "referer": "https://www.airbnb.fr/",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0"
+  },
+  "contentType": "text/plain; charset=utf-8",
+  "body": "bdnqqF1Iy2CdYavC2Jx6bFD4mjEqh2RRPEHydzqAeL2eAvD3jqKS7Lr3vy68V4kV/KggWlTn4s9C0w6fyGJLLUZE22gDrQ==",
+  "timestamp": "2026-03-06T15:08:47.805Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

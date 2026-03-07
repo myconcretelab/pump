@@ -1,0 +1,50 @@
+{
+  "baseUrl": "https://example.com/products",
+  "username": "test@example.com",
+  "password": "",
+  "hasOTP": false,
+  "manualScrollMode": false,
+  "manualScrollDuration": 20000,
+  "scrollSelector": ".products-carousel",
+  "scrollCount": 5,
+  "scrollDistance": 500,
+  "scrollDelay": 1000,
+  "waitBeforeScroll": 2000,
+  "enableHAR": false,
+  "outputFolder": "/Users/username/pump_sessions",
+  "filterRules": {
+    "inclusive": [
+      {
+        "type": "url-contains",
+        "pattern": "/api/",
+        "negate": false
+      },
+      {
+        "type": "content-type",
+        "pattern": "application/json",
+        "negate": false
+      }
+    ],
+    "exclusive": [
+      {
+        "type": "url-contains",
+        "pattern": "analytics",
+        "negate": false
+      },
+      {
+        "type": "exclude-assets",
+        "pattern": "",
+        "negate": false
+      }
+    ]
+  },
+  "loginStrategy": "simple",
+  "advancedSelectors": {
+    "usernameInput": "input[type='email']",
+    "passwordInput": "input[type='password']",
+    "submitButton": "button[type='submit']",
+    "emailFirstButton": "button:has-text('Continue with email')",
+    "continueAfterUsernameButton": "button:has-text('Continue')",
+    "finalSubmitButton": "button:has-text('Sign in')"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "filename": "0143_get_340416386154d1b20058350c895c78f58a26fec828df4a3159cfb79854a5f529.json",
+  "url": "https://www.airbnb.fr/api/v3/getCalendarTimelines/340416386154d1b20058350c895c78f58a26fec828df4a3159cfb79854a5f529?operationName=getCalendarTimelines&locale=fr&currency=EUR&variables=%7B%22listingIds%22%3A%5B%226668903%22%2C%2216674752%22%2C%2243504621%22%2C%2248504640%22%2C%221182344118629001592%22%2C%221256595615494549883%22%5D%2C%22startDate%22%3A%222026-03-04%22%2C%22endDate%22%3A%222026-03-16%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%22340416386154d1b20058350c895c78f58a26fec828df4a3159cfb79854a5f529%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=88, cdn-cache; desc=MISS, edge; dur=122, origin; dur=97",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "90",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.76,b=372384515,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_STERLING,o=20940],[a=237,c=o]",
+    "content-length": "296",
+    "x-client-request-id": "1mc3i391o1hnmt0mubfb4126hcmd",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 18:29:41 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "udZshh8dOzM4UI72uB4LfA==",
+    "x-airbnb-sureride": "c1a1o.0.4cb71402.1772821780.16322303%%i1c1o%%t1d1o.udZshh8dOzM4UI72uB4LfA==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Fri, 06 Mar 2026 18:29:41 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "253c2062e0f61ebc5dedb274e6164e79925744dedae835aaeeced54811f22215",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=159933ecd98ec"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "1kbpldy0aohy741mg81y818msu3d",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "1y3cy6n14srz2q0hd4laq1x2vgsr",
+    "x-client-request-id": "1mc3i391o1hnmt0mubfb4126hcmd",
+    "x-client-version": "80882758a4fb19f64c98225c641752e291466bda",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "patek": {
+        "__typename": "PatekQuery",
+        "getTimelines": {
+          "__typename": "PatekTimelinesResponse",
+          "timelinesByListingIds": {
+            "6668903": [
+              {
+                "sinceDate": "2026-02-27",
+                "seasonalRuleGroupId": 82397139,
+                "isSynthetic": false
+              },
+              {
+                "sinceDate": "2026-03-06",
+                "isSynthetic": false
+              }
+            ],
+            "16674752": [
+              {
+                "sinceDate": "2026-02-25",
+                "isSynthetic": false
+              }
+            ],
+            "43504621": [
+              {
+                "sinceDate": "2026-03-02",
+                "isSynthetic": false
+              }
+            ],
+            "48504640": [
+              {
+                "sinceDate": "2026-03-02",
+                "isSynthetic": false
+              }
+            ],
+            "1182344118629001592": [
+              {
+                "sinceDate": "2026-02-12",
+                "isSynthetic": false
+              }
+            ],
+            "1256595615494549883": [
+              {
+                "sinceDate": "2026-03-02",
+                "isSynthetic": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "udZshh8dOzM4UI72uB4LfA=="
+    }
+  },
+  "timestamp": "2026-03-06T18:29:41.228Z",
+  "context": "before-scroll",
+  "keptByFilters": true,
+  "filterExplanation": "No filters applied, keeping all responses"
+}

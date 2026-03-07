@@ -1,0 +1,833 @@
+{
+  "url": "https://www.airbnb.fr/api/v3/getOpportunities/5fc02c362fef474f90eea5c08cb17164e9982db67d3f16b86de7bf1bfd60742c?operationName=getOpportunities&locale=fr&currency=EUR&variables=%7B%22request%22%3A%7B%22clientName%22%3A%22multicalendar%22%2C%22componentArguments%22%3A%5B%7B%22componentName%22%3A%22OPPORTUNITY_HUB_LEVERS_SECTION%22%2C%22arguments%22%3A%7B%22limit%22%3A100%7D%7D%5D%7D%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%225fc02c362fef474f90eea5c08cb17164e9982db67d3f16b86de7bf1bfd60742c%22%7D%7D",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-encoding": "gzip",
+    "x-erf-bev-bev": "1772809725_EAMjcyNzU4NGYzZD",
+    "origin-trial": "AkOekvxwprBLSP7I2nhyRn5yZGt9lTJN6UIYziFKVYg5OhlzmlNDciWbBWkEQ5TYPz+aqsuIUT2pPEjPUD5dFAsAAABneyJvcmlnaW4iOiJodHRwczovL2FpcmJuYi5jb206NDQzIiwiZmVhdHVyZSI6IlByaW9yaXR5SGludHNBUEkiLCJleHBpcnkiOjE2NDc5OTM1OTksImlzU3ViZG9tYWluIjp0cnVlfQ==",
+    "x-instrumentation": "airbnb, airbnb",
+    "x-content-type-options": "nosniff",
+    "x-server-lifecycle-phase": "running, running",
+    "server-timing": "backend;dur=138, cdn-cache; desc=MISS, edge; dur=103, origin; dur=185",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json;charset=utf-8",
+    "cache-control": "max-age=0, no-cache, no-store",
+    "cachestatus": "on",
+    "x-envoy-upstream-service-time": "140",
+    "pragma": "no-cache",
+    "referrer-policy": "same-origin",
+    "akamai-request-bc": "[a=2.20.183.83,b=494450947,c=g,n=FR_PAC_MARSEILLE,o=20940],[c=c,n=US_VA_STERLING,o=20940],[a=237,c=o]",
+    "content-length": "3027",
+    "x-client-request-id": "1lpjmnc1mm3rhs0ao4abk1f88r0p",
+    "x-xss-protection": "1; mode=block",
+    "server": "nginx",
+    "expires": "Fri, 06 Mar 2026 16:12:03 GMT",
+    "status": "200 OK",
+    "x-airbnb-internal-trace-id": "RSWvturdpdeTNdHEMdIj2Q==",
+    "x-airbnb-sureride": "c1a1o.0.53b71402.1772813522.1d78b903%%i1c1o%%t1d1o.RSWvturdpdeTNdHEMdIj2Q==%%h1",
+    "x-server-canonical-path": "//{path:(v2|v3)((/viaduct(/(external|legacy-psf)(/[A-Za-z0-9_-]+)?(/[0-9a-fA-F]{64})?)?)|(/[A-Za-z0-9_-]+))?}",
+    "date": "Fri, 06 Mar 2026 16:12:03 GMT",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=10886400; includeSubdomains",
+    "x-airbnb-graphql-schema-id": "253c2062e0f61ebc5dedb274e6164e79925744dedae835aaeeced54811f22215",
+    "x-browser-type": "unknown",
+    "quic-version": "0x00000001",
+    "x-erf-bev-bev-is-generated": "0",
+    "x-app-git-sha": "sha=159933ecd98ec"
+  },
+  "requestHeaders": {
+    "x-airbnb-api-key": "d306zoyjsyarp7ifhu67rjxn52tv0t20",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "x-airbnb-graphql-platform-client": "minimalist-niobe",
+    "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "x-niobe-short-circuited": "true",
+    "x-airbnb-graphql-platform": "web",
+    "content-type": "application/json",
+    "x-airbnb-network-log-link": "18nh1wg16nfrxt1r4pjen0jqvp1n",
+    "x-csrf-without-token": "1",
+    "x-csrf-token": "",
+    "referer": "https://www.airbnb.fr/multicalendar/",
+    "x-airbnb-client-trace-id": "0nabevc0m6jby01z0v3se0icxmi0",
+    "x-client-request-id": "1lpjmnc1mm3rhs0ao4abk1f88r0p",
+    "x-client-version": "0b42ecdf8cd358978c0b375645aa267d97256266",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "x-airbnb-supports-airlock-v2": "true"
+  },
+  "contentType": "application/json;charset=utf-8",
+  "body": {
+    "data": {
+      "porygon": {
+        "__typename": "porygonQuery",
+        "getPerformanceComponents": {
+          "__typename": "porygonGetPerformanceComponentsResponse",
+          "components": [
+            {
+              "__typename": "porygonPOpportunityHubLeversSection",
+              "componentName": "OPPORTUNITY_HUB_LEVERS_SECTION",
+              "opportunities": [
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_INSTANT_BOOKING",
+                  "identifier": "OLYMPUS_INSTANT_BOOKING",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 4,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "4/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réservation instantanée activée",
+                    "description": "Profitez des réservations de dernière minute en permettant aux voyageurs de réserver votre logement plus facilement.",
+                    "eligibleListingCount": 6,
+                    "title": "Permettez aux voyageurs de réserver instantanément",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_INSTANT_BOOKING&identifier=OLYMPUS_INSTANT_BOOKING",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0.6666666666666666
+                      },
+                      "valueString": "67%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_PET_FRIENDLY_AMENITY",
+                  "identifier": "OLYMPUS_PET_FRIENDLY_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 2,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "2/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Animaux de compagnie acceptés",
+                    "description": "Si vous le jugez approprié, indiquez que les animaux de compagnie sont les bienvenus dans vos logements.",
+                    "eligibleListingCount": 6,
+                    "title": "Autorisez les animaux de compagnie",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_PET_FRIENDLY_AMENITY&identifier=OLYMPUS_PET_FRIENDLY_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0.3333333333333333
+                      },
+                      "valueString": "33%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_REDUCE_MINIMUM_STAY",
+                  "identifier": "OLYMPUS_REDUCE_MINIMUM_STAY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Voyages plus courts activés",
+                    "description": "Apparaissez dans les résultats de recherche des voyageurs qui partent pour un court voyage en réduisant votre durée minimale de séjour.",
+                    "eligibleListingCount": 6,
+                    "title": "Accueillez des voyageurs pour des séjours courte durée",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_REDUCE_MINIMUM_STAY&identifier=OLYMPUS_REDUCE_MINIMUM_STAY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_WEEKLY_DISCOUNT",
+                  "identifier": "OLYMPUS_WEEKLY_DISCOUNT",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réductions à la semaine activées",
+                    "description": "Attirez les voyageurs à la recherche d'un séjour de 7 nuits ou plus.",
+                    "eligibleListingCount": 6,
+                    "title": "Proposez des réductions à la semaine",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_WEEKLY_DISCOUNT&identifier=OLYMPUS_WEEKLY_DISCOUNT",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_EARLY_BIRD_PROMOTION",
+                  "identifier": "OLYMPUS_EARLY_BIRD_PROMOTION",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réductions en cas de réservation anticipée appliquées",
+                    "description": "Définissez une réduction pour attirer les voyageurs qui s'organisent à l'avance.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez une réduction en cas de réservation anticipée",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_EARLY_BIRD_PROMOTION&identifier=OLYMPUS_EARLY_BIRD_PROMOTION",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_NEW_HOSTING_PROMOTION",
+                  "identifier": "OLYMPUS_NEW_HOSTING_PROMOTION",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/1",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Promotion Nouvelles annonces appliquée",
+                    "description": "Vous pourrez ainsi obtenir vos 3 premiers commentaires. Votre évaluation apparaîtra ensuite dans les résultats de recherche. Les évaluations peuvent aider les voyageurs à faire le choix de réserver votre logement.",
+                    "eligibleListingCount": 1,
+                    "title": "Proposez une promotion Nouvelles annonces de 20 %",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_NEW_HOSTING_PROMOTION&identifier=OLYMPUS_NEW_HOSTING_PROMOTION",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_FLEXIBLE_CANCELLATION_POLICY",
+                  "identifier": "OLYMPUS_FLEXIBLE_CANCELLATION_POLICY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Conditions d'annulation flexibles activées",
+                    "description": "Incitez les voyageurs à réserver en leur proposant des conditions d'annulation flexibles.",
+                    "eligibleListingCount": 6,
+                    "title": "Passez à des conditions d'annulation flexibles",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_FLEXIBLE_CANCELLATION_POLICY&identifier=OLYMPUS_FLEXIBLE_CANCELLATION_POLICY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_AIR_CONDITIONING_AMENITY",
+                  "identifier": "OLYMPUS_AIR_CONDITIONING_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Climatisation ajoutée",
+                    "description": "Indiquez à vos voyageurs qu'ils peuvent rester au frais chez vous.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez la climatisation",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_AIR_CONDITIONING_AMENITY&identifier=OLYMPUS_AIR_CONDITIONING_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_LAST_MINUTE_DISCOUNT",
+                  "identifier": "OLYMPUS_LAST_MINUTE_DISCOUNT",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 0,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "0/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réduction de dernière minute appliquée",
+                    "description": "Démarquez-vous auprès des voyageurs de dernière minute.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez une réduction pour réservation de dernière minute",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_LAST_MINUTE_DISCOUNT&identifier=OLYMPUS_LAST_MINUTE_DISCOUNT",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 0
+                      },
+                      "valueString": "0%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_COOKING_BASICS_AMENITY",
+                  "identifier": "OLYMPUS_COOKING_BASICS_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Essentiels de cuisine ajoutés",
+                    "description": "Indiquez à vos voyageurs qu'ils auront à leur disposition tout le nécessaire de base pour cuisiner.",
+                    "eligibleListingCount": 6,
+                    "title": "Mettez à disposition le nécessaire pour cuisiner",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_COOKING_BASICS_AMENITY&identifier=OLYMPUS_COOKING_BASICS_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_TV_AMENITY",
+                  "identifier": "OLYMPUS_TV_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Télévision ajoutée",
+                    "description": "Donnez aux voyageurs la possibilité de se détendre en regardant leurs émissions préférées.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez une télévision",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_TV_AMENITY&identifier=OLYMPUS_TV_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_FREE_PARKING_AMENITY",
+                  "identifier": "OLYMPUS_FREE_PARKING_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Stationnement gratuit ajouté",
+                    "description": "Indiquez aux voyageurs si votre logement dispose d'une place de parking.",
+                    "eligibleListingCount": 6,
+                    "title": "Indiquez tout stationnement gratuit",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_FREE_PARKING_AMENITY&identifier=OLYMPUS_FREE_PARKING_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_CRIB_AMENITY",
+                  "identifier": "OLYMPUS_CRIB_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Lit pour bébé ajouté",
+                    "description": "Envisagez d'ajouter un lit pour bébé. C'est un incontournable pour de nombreux parents qui voyagent avec un bébé.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez un lit pour bébé",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_CRIB_AMENITY&identifier=OLYMPUS_CRIB_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_RTB_ABOVE_MAX_LOS",
+                  "identifier": "OLYMPUS_RTB_ABOVE_MAX_LOS",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 2,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "2/2",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Les demandes pour des séjours plus longs sont activées",
+                    "description": "Permettez aux voyageurs de s'informer même si le voyage dépasse votre durée maximale de séjour.",
+                    "eligibleListingCount": 2,
+                    "title": "Recevez des demandes pour des séjours plus longs",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_RTB_ABOVE_MAX_LOS&identifier=OLYMPUS_RTB_ABOVE_MAX_LOS",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_HIGH_DEMAND_NIGHTS",
+                  "identifier": "OLYMPUS_HIGH_DEMAND_NIGHTS",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Dates très demandées débloquées",
+                    "description": "Débloquez les dates que les voyageurs recherchent à proximité de vos logements.",
+                    "eligibleListingCount": 6,
+                    "title": "Rendez disponibles les dates très demandées",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_HIGH_DEMAND_NIGHTS&identifier=OLYMPUS_HIGH_DEMAND_NIGHTS",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_ALLOW_LONGER_STAY",
+                  "identifier": "OLYMPUS_ALLOW_LONGER_STAY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Voyages plus longs activés",
+                    "description": "Autoriser des séjours plus longs pourrait vous aider à remplir votre calendrier et à gagner plus.",
+                    "eligibleListingCount": 6,
+                    "title": "Accueillez des voyageurs pour des séjours plus longs",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_ALLOW_LONGER_STAY&identifier=OLYMPUS_ALLOW_LONGER_STAY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_LOWER_ADVANCED_NOTICE",
+                  "identifier": "OLYMPUS_LOWER_ADVANCED_NOTICE",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réservation avec un court préavis autorisé",
+                    "description": "Compte tenu de la forte demande en voyages de dernière minute, vous avez plus de chances de remplir votre calendrier en acceptant un préavis court.",
+                    "eligibleListingCount": 6,
+                    "title": "Autorisez la réservation avec un court préavis",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_LOWER_ADVANCED_NOTICE&identifier=OLYMPUS_LOWER_ADVANCED_NOTICE",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_INCREASE_AVAILABILITY_WINDOW",
+                  "identifier": "OLYMPUS_INCREASE_AVAILABILITY_WINDOW",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 1,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "1/1",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Plage de disponibilité étendue",
+                    "description": "Remplissez votre calendrier sur une période suffisamment longue pour attirer les voyageurs qui prévoient leur séjour à l'avance.",
+                    "eligibleListingCount": 1,
+                    "title": "Autorisez les voyageurs à réserver 6 mois à l'avance",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_INCREASE_AVAILABILITY_WINDOW&identifier=OLYMPUS_INCREASE_AVAILABILITY_WINDOW",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_HEATING_AMENITY",
+                  "identifier": "OLYMPUS_HEATING_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Chauffage ajouté",
+                    "description": "Faites savoir aux voyageurs que le logement est chauffé.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez le chauffage",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_HEATING_AMENITY&identifier=OLYMPUS_HEATING_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_MONTHLY_DISCOUNT",
+                  "identifier": "OLYMPUS_MONTHLY_DISCOUNT",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Réductions au mois activées",
+                    "description": "Encouragez les voyageurs à rester plus longtemps en proposant une réduction au mois. Passez ainsi moins de temps à préparer votre logement entre les séjours.",
+                    "eligibleListingCount": 6,
+                    "title": "Proposez des réductions au mois",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_MONTHLY_DISCOUNT&identifier=OLYMPUS_MONTHLY_DISCOUNT",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_WIFI_AMENITY",
+                  "identifier": "OLYMPUS_WIFI_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Wifi ajouté",
+                    "description": "Les voyageurs souhaitent avoir accès à Internet et disposer d'une connexion fiable.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez une connexion wifi",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_WIFI_AMENITY&identifier=OLYMPUS_WIFI_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_LAPTOP_FRIENDLY_AMENITY",
+                  "identifier": "OLYMPUS_LAPTOP_FRIENDLY_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Espaces de travail ajoutés",
+                    "description": "Les voyageurs cherchent des logements avec une table ou un bureau et une chaise confortable pour rester productifs lors de leurs déplacements.",
+                    "eligibleListingCount": 6,
+                    "title": "Organisez un espace de travail pour ordinateur",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_LAPTOP_FRIENDLY_AMENITY&identifier=OLYMPUS_LAPTOP_FRIENDLY_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_IRON_AMENITY",
+                  "identifier": "OLYMPUS_IRON_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Fer à repasser ajouté",
+                    "description": "Indiquez aux voyageurs d'affaires que votre logement est équipé d'un fer à repasser.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez un fer à repasser",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_IRON_AMENITY&identifier=OLYMPUS_IRON_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                },
+                {
+                  "__typename": "porygonOGenericOlympusOpportunity",
+                  "type": "OLYMPUS_HAIR_DRYER_AMENITY",
+                  "identifier": "OLYMPUS_HAIR_DRYER_AMENITY",
+                  "card": {
+                    "__typename": "porygonOOpportunityCard",
+                    "adoptedListingCount": 6,
+                    "statusLabel": null,
+                    "adoptionProgressIndicator": "6/6",
+                    "adoptionProgressLabel": "annonces activées",
+                    "affectedListings": null,
+                    "completedTitle": "Sèche-cheveux ajouté",
+                    "description": "Indiquez à vos voyageurs si votre logement est équipé d'un sèche-cheveux pour qu'ils n'aient pas à emporter le leur.",
+                    "eligibleListingCount": 6,
+                    "title": "Ajoutez un sèche-cheveux",
+                    "actionUrl": {
+                      "__typename": "porygonOLink",
+                      "label": "action",
+                      "url": "/performance/opportunities/opportunity?type=OLYMPUS_HAIR_DRYER_AMENITY&identifier=OLYMPUS_HAIR_DRYER_AMENITY",
+                      "deepLink": null
+                    },
+                    "adoptionRate": {
+                      "__typename": "porygonOMetricUnit",
+                      "value": {
+                        "__typename": "porygonDoubleWrapper",
+                        "doubleValue": 1
+                      },
+                      "valueString": "100%"
+                    }
+                  }
+                }
+              ],
+              "opportunityCardsInfo": {
+                "__typename": "porygonOOpportunityCardsInfo",
+                "title": "Progression",
+                "referrerLink": null
+              }
+            }
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "traceId": "RSWvturdpdeTNdHEMdIj2Q=="
+    }
+  },
+  "timestamp": "2026-03-06T16:12:03.234Z",
+  "context": "before-scroll",
+  "filterExplanation": "No filters applied, keeping all responses"
+}

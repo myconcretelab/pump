@@ -1,0 +1,17 @@
+{
+  "url": "blob:https://www.airbnb.fr/481553ed-5ef2-4a25-adf1-6609a4fef917",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "content-type": "text/javascript",
+    "content-length": "1071"
+  },
+  "requestHeaders": {
+    "accept": "*/*"
+  },
+  "contentType": "text/javascript",
+  "body": null,
+  "timestamp": "2026-03-06T14:50:16.568Z",
+  "context": "login",
+  "filterExplanation": "No filters applied, keeping all responses"
+}
