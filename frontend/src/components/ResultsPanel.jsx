@@ -586,32 +586,46 @@ function ReservationRow({ reservation }) {
   const listingLabel = reservation.listingNickname || reservation.listingName || reservation.listingId || '-';
   const priceLabel = reservation.payoutFormatted || formatCurrencyAmount(reservation.payout, reservation.currency);
   const stayLabel = [reservation.checkIn, reservation.checkOut].filter(Boolean).join(' -> ');
+  const isBlocked = reservation.type === 'blocked' || reservation.source === 'calendar-note';
+  const primaryLabel = reservation.guestName || (isBlocked ? 'Blocked dates' : 'Unknown guest');
+  const secondaryLabel = reservation.note
+    ? reservation.note
+    : reservation.guestCount != null
+      ? `${reservation.guestCount} guest(s)`
+      : isBlocked
+        ? 'Manual/commented block'
+        : 'Guest count unavailable';
+  const durationLabel =
+    reservation.nights != null
+      ? isBlocked
+        ? `${reservation.nights} blocked day(s)`
+        : `${reservation.nights} night(s)`
+      : isBlocked
+        ? 'Blocked duration unavailable'
+        : 'Night count unavailable';
+  const statusLabel = reservation.status || (isBlocked ? 'blocked' : '-');
 
   return (
     <tr className="border-t border-slate-800 align-top text-slate-200">
       <td className="px-3 py-2">
-        <p className="font-medium text-white">{reservation.guestName || 'Unknown guest'}</p>
-        <p className="text-xs text-slate-400">
-          {reservation.guestCount != null ? `${reservation.guestCount} guest(s)` : 'Guest count unavailable'}
-        </p>
+        <p className="font-medium text-white">{primaryLabel}</p>
+        <p className="text-xs text-slate-400">{secondaryLabel}</p>
       </td>
       <td className="px-3 py-2">
         <p>{stayLabel || '-'}</p>
-        <p className="text-xs text-slate-400">
-          {reservation.nights != null ? `${reservation.nights} night(s)` : 'Night count unavailable'}
-        </p>
+        <p className="text-xs text-slate-400">{durationLabel}</p>
       </td>
       <td className="px-3 py-2">
         <p className="font-medium text-white">{listingLabel}</p>
-        {reservation.listingNickname && reservation.listingName && reservation.listingNickname !== reservation.listingName && (
+        {reservation.listingNickname &&
+        reservation.listingName &&
+        reservation.listingNickname !== reservation.listingName ? (
           <p className="text-xs text-slate-400">{reservation.listingName}</p>
-        )}
+        ) : null}
       </td>
       <td className="px-3 py-2">{priceLabel || '-'}</td>
       <td className="px-3 py-2">
-        <span className="rounded bg-slate-800 px-2 py-1 text-xs text-slate-200">
-          {reservation.status || '-'}
-        </span>
+        <span className="rounded bg-slate-800 px-2 py-1 text-xs text-slate-200">{statusLabel}</span>
       </td>
       <td className="px-3 py-2 font-mono text-xs text-slate-400">{reservation.confirmationCode || '-'}</td>
     </tr>

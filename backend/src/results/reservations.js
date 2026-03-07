@@ -26,8 +26,37 @@ function parseCurrencyAmount(value) {
   return Number.isFinite(amount) ? amount : null;
 }
 
+function normalizeString(value) {
+  if (typeof value !== 'string') {
+    return null;
+  }
+
+  const normalized = value.trim();
+  return normalized || null;
+}
+
+function isIsoDate(value) {
+  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value);
+}
+
+function addDays(value, daysToAdd) {
+  if (!isIsoDate(value)) {
+    return null;
+  }
+
+  const [year, month, day] = value.split('-').map((part) => Number(part));
+  const utcDate = new Date(Date.UTC(year, month - 1, day + daysToAdd));
+  return utcDate.toISOString().slice(0, 10);
+}
+
 function getReservationKey(listingId, confirmationCode, checkIn, checkOut) {
   return [listingId || 'unknown', confirmationCode || 'unknown', checkIn || 'unknown', checkOut || 'unknown'].join(
+    '|'
+  );
+}
+
+function getBlockedReservationKey(listingId, checkIn, checkOut, note) {
+  return [listingId || 'unknown', 'blocked', checkIn || 'unknown', checkOut || 'unknown', note || 'no-note'].join(
     '|'
   );
 }
@@ -61,6 +90,7 @@ function mergeReservation(existing, next) {
     guestName: next.guestName || existing.guestName || null,
     guestFirstName: next.guestFirstName || existing.guestFirstName || null,
     guestLastName: next.guestLastName || existing.guestLastName || null,
+    note: next.note || existing.note || null,
   };
 }
 
@@ -83,13 +113,40 @@ function collectListingDetails(body, listingById) {
   }
 }
 
+function getDayReservation(day) {
+  const reservation = day?.unavailabilityReasons?.reservation;
+  if (!reservation?.confirmationCode || !reservation?.startDate || !reservation?.endDate) {
+    return null;
+  }
+
+  return reservation;
+}
+
+function getDayNote(day) {
+  const candidates = [
+    day?.notes,
+    day?.note,
+    day?.unavailabilityReasons?.notes,
+    day?.unavailabilityReasons?.note,
+  ];
+
+  for (const candidate of candidates) {
+    const normalized = normalizeString(candidate);
+    if (normalized) {
+      return normalized;
+    }
+  }
+
+  return null;
+}
+
 function collectReservations(body, listingById, reservationsByKey) {
   const calendars = body?.data?.patek?.getMultiCalendarListingsAndCalendars?.hostCalendarsResponse?.calendars || [];
 
   for (const calendar of calendars) {
     for (const day of calendar?.days || []) {
-      const reservation = day?.unavailabilityReasons?.reservation;
-      if (!reservation?.confirmationCode || !reservation?.startDate || !reservation?.endDate) {
+      const reservation = getDayReservation(day);
+      if (!reservation) {
         continue;
       }
 
@@ -121,12 +178,156 @@ function collectReservations(body, listingById, reservationsByKey) {
         status: reservation.statusString || null,
         payout: null,
         payoutFormatted: null,
+        note: getDayNote(day) || normalizeString(reservation?.notes),
       };
 
       const key = nextReservation.id;
       reservationsByKey.set(key, mergeReservation(reservationsByKey.get(key), nextReservation));
     }
   }
+}
+
+function collectBlockedDateNotes(body, blockedDaysByKey) {
+  const calendars = body?.data?.patek?.getMultiCalendarListingsAndCalendars?.hostCalendarsResponse?.calendars || [];
+
+  for (const calendar of calendars) {
+    for (const day of calendar?.days || []) {
+      if (!isIsoDate(day?.day)) {
+        continue;
+      }
+
+      const reservation = getDayReservation(day);
+      const note = getDayNote(day);
+      const reasons = day?.unavailabilityReasons || {};
+
+      if (reservation || !note) {
+        continue;
+      }
+
+      const isBlockedByHost =
+        day?.available === false &&
+        day?.bookable === false &&
+        reasons?.reservation == null &&
+        (reasons?.hostBusy === true || reasons?.busySubtype === 'HOST_BUSY');
+
+      if (!isBlockedByHost) {
+        continue;
+      }
+
+      const listingId = String(day?.listingId || calendar?.listingId || '').trim();
+      const key = `${listingId || 'unknown'}|${day.day}`;
+      const existing = blockedDaysByKey.get(key);
+
+      blockedDaysByKey.set(key, {
+        ...(existing || {}),
+        listingId,
+        note,
+        day: day.day,
+        busySubtype: existing?.busySubtype || reasons?.busySubtype || null,
+        hostBusy: existing?.hostBusy ?? reasons?.hostBusy ?? null,
+      });
+    }
+  }
+}
+
+function finalizeBlockedDateNotes(blockedDaysByKey, listingById, reservationsByKey) {
+  const blockedDays = [...blockedDaysByKey.values()].sort((left, right) => {
+    if (left.listingId !== right.listingId) {
+      return String(left.listingId || '').localeCompare(String(right.listingId || ''));
+    }
+
+    if (left.note !== right.note) {
+      return String(left.note || '').localeCompare(String(right.note || ''));
+    }
+
+    return String(left.day || '').localeCompare(String(right.day || ''));
+  });
+
+  let currentBlock = null;
+
+  const flushCurrentBlock = () => {
+    if (!currentBlock) {
+      return;
+    }
+
+    const listing = listingById.get(currentBlock.listingId) || {};
+    const checkOut = addDays(currentBlock.endDate, 1) || currentBlock.endDate;
+    const nextReservation = {
+      id: getBlockedReservationKey(
+        currentBlock.listingId,
+        currentBlock.startDate,
+        checkOut,
+        currentBlock.note
+      ),
+      type: 'blocked',
+      source: 'calendar-note',
+      confirmationCode: null,
+      listingId: currentBlock.listingId || null,
+      listingName: listing.listingName || null,
+      listingNickname: listing.listingNickname || null,
+      listingThumbnailUrl: listing.listingThumbnailUrl || null,
+      guestName: null,
+      guestFirstName: null,
+      guestLastName: null,
+      guestUserId: null,
+      checkIn: currentBlock.startDate,
+      checkOut,
+      nights: currentBlock.dayCount,
+      guestCount: null,
+      adults: null,
+      children: null,
+      infants: null,
+      basePrice: null,
+      currency: null,
+      status: 'blocked',
+      payout: null,
+      payoutFormatted: null,
+      note: currentBlock.note,
+      busySubtype: currentBlock.busySubtype || null,
+      hostBusy: currentBlock.hostBusy ?? null,
+    };
+
+    reservationsByKey.set(
+      nextReservation.id,
+      mergeReservation(reservationsByKey.get(nextReservation.id), nextReservation)
+    );
+    currentBlock = null;
+  };
+
+  for (const blockedDay of blockedDays) {
+    const expectedNextDay =
+      currentBlock &&
+      currentBlock.listingId === blockedDay.listingId &&
+      currentBlock.note === blockedDay.note
+        ? addDays(currentBlock.endDate, 1)
+        : null;
+
+    if (
+      currentBlock &&
+      currentBlock.listingId === blockedDay.listingId &&
+      currentBlock.note === blockedDay.note &&
+      expectedNextDay === blockedDay.day
+    ) {
+      currentBlock.endDate = blockedDay.day;
+      currentBlock.dayCount += 1;
+      currentBlock.busySubtype = currentBlock.busySubtype || blockedDay.busySubtype || null;
+      currentBlock.hostBusy = currentBlock.hostBusy ?? blockedDay.hostBusy ?? null;
+      continue;
+    }
+
+    flushCurrentBlock();
+    currentBlock = {
+      listingId: blockedDay.listingId,
+      note: blockedDay.note,
+      startDate: blockedDay.day,
+      endDate: blockedDay.day,
+      dayCount: 1,
+      busySubtype: blockedDay.busySubtype || null,
+      hostBusy: blockedDay.hostBusy ?? null,
+    };
+  }
+
+  flushCurrentBlock();
 }
 
 function collectAdditionalReservationData(body, payoutByConfirmationCode) {
@@ -165,6 +366,7 @@ export function extractReservationsFromSession(storageDir) {
   const listingById = new Map();
   const reservationsByKey = new Map();
   const payoutByConfirmationCode = new Map();
+  const blockedDaysByKey = new Map();
   let inspectedResponses = 0;
   let matchedResponses = 0;
 
@@ -200,6 +402,7 @@ export function extractReservationsFromSession(storageDir) {
       matchedResponses += 1;
       collectListingDetails(body, listingById);
       collectReservations(body, listingById, reservationsByKey);
+      collectBlockedDateNotes(body, blockedDaysByKey);
       continue;
     }
 
@@ -218,6 +421,8 @@ export function extractReservationsFromSession(storageDir) {
     reservationsByKey.set(key, mergeReservation(reservation, payoutData));
   }
 
+  finalizeBlockedDateNotes(blockedDaysByKey, listingById, reservationsByKey);
+
   const reservations = [...reservationsByKey.values()].sort((left, right) => {
     if (left.checkIn !== right.checkIn) {
       return String(left.checkIn).localeCompare(String(right.checkIn));
@@ -227,7 +432,7 @@ export function extractReservationsFromSession(storageDir) {
       return String(left.listingName || '').localeCompare(String(right.listingName || ''));
     }
 
-    return String(left.guestName || '').localeCompare(String(right.guestName || ''));
+    return String(left.guestName || left.note || '').localeCompare(String(right.guestName || right.note || ''));
   });
 
   return {
