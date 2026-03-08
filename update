@@ -16,7 +16,7 @@ mkdir -p data/logs
 
 echo ""
 echo "Installing npm dependencies..."
-npm install
+npm install --include=optional
 
 echo ""
 echo "Updating Playwright browser..."
