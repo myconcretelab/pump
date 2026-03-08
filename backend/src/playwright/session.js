@@ -25,12 +25,21 @@ function resolveBooleanSetting(value, fallback) {
   return fallback;
 }
 
+function hasDisplayServer() {
+  return Boolean(process.env.DISPLAY || process.env.WAYLAND_DISPLAY);
+}
+
+function shouldForceHeadlessWithoutDisplay() {
+  return process.platform === 'linux' && !hasDisplayServer();
+}
+
 function resolvePlaywrightLaunchOptions() {
-  const headless = resolveBooleanSetting(
+  const requestedHeadless = resolveBooleanSetting(
     process.env.PLAYWRIGHT_HEADLESS,
     process.env.NODE_ENV === 'production'
   );
   const disableSandbox = resolveBooleanSetting(process.env.PLAYWRIGHT_DISABLE_SANDBOX, false);
+  const headless = shouldForceHeadlessWithoutDisplay() ? true : requestedHeadless;
 
   return {
     headless,
@@ -54,6 +63,9 @@ class PlaywrightSession {
     try {
       logger.info('Initializing Playwright browser...');
       const launchOptions = resolvePlaywrightLaunchOptions();
+      if (shouldForceHeadlessWithoutDisplay() && launchOptions.headless) {
+        logger.info('No Linux display server detected, forcing Playwright to run headless');
+      }
       this.browser = await chromium.launch(launchOptions);
       this.context = await this.createContext();
       this.page = await this.context.newPage();

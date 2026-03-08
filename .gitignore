@@ -15,6 +15,7 @@ build/
 .cache/
 out/
 data/sessions/
+data/storageStates/
 data/logs/
 backend/data/configs/last.json
 backend/data/sessions/

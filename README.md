@@ -100,6 +100,8 @@ Recommended for server and container deployments:
 export PLAYWRIGHT_HEADLESS="true"
 ```
 
+If no X server / Wayland display is available, the backend now forces Playwright to run headless automatically.
+
 Optional path overrides:
 
 ```bash
@@ -466,6 +468,7 @@ Click **💾 Save Configuration** to explicitly save current settings.
 2. Test connection first: **🔗 Test Connection**
 3. Check browser console for errors
 4. Ensure CSS selector is correct in advanced settings
+5. On Linux servers without `DISPLAY`/`WAYLAND_DISPLAY`, Playwright is forced to headless mode automatically
 
 ### Elements Not Found
 
