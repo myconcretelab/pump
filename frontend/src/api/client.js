@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { getStoredApiKey } from './auth';
 
 const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
@@ -6,6 +7,30 @@ const client = axios.create({
   baseURL: API_URL || undefined,
   timeout: 30000,
 });
+
+client.interceptors.request.use((config) => {
+  const apiKey = getStoredApiKey();
+  if (!apiKey) {
+    return config;
+  }
+
+  config.headers = config.headers || {};
+  config.headers['x-api-key'] = apiKey;
+  return config;
+});
+
+function buildBrowserUrl(path, params = {}) {
+  const base = API_URL ? new URL(API_URL, window.location.origin) : new URL(window.location.origin);
+  const url = new URL(path, base);
+
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== null && value !== '') {
+      url.searchParams.set(key, value);
+    }
+  });
+
+  return url.toString();
+}
 
 export const configAPI = {
   getConfig: () => client.get('/api/config'),
@@ -36,7 +61,9 @@ export const resultsAPI = {
 };
 
 export const streamLogs = (onMessage, onError) => {
-  const eventSource = new EventSource(`${API_URL}/api/logs/stream`);
+  const eventSource = new EventSource(
+    buildBrowserUrl('/api/logs/stream', { apiKey: getStoredApiKey() })
+  );
 
   eventSource.onmessage = (event) => {
     try {

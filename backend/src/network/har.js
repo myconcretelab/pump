@@ -1,5 +1,3 @@
-import logger from '../logger.js';
-
 function generateHAREntry(response) {
   return {
     startedDateTime: response.timestamp,

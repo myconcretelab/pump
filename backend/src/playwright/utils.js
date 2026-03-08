@@ -9,7 +9,7 @@ async function waitForElement(page, selector, options = {}) {
   try {
     await page.waitForSelector(selector, { timeout, state: visible ? 'visible' : 'attached' });
     return true;
-  } catch (err) {
+  } catch {
     logger.warn(`Element not found: ${selector}`, { timeout });
     return false;
   }
@@ -20,7 +20,7 @@ async function waitForNavigation(page, options = {}) {
   try {
     await page.waitForLoadState('networkidle', { timeout });
     return true;
-  } catch (err) {
+  } catch {
     logger.warn('Network idle timeout', { timeout });
     return false;
   }
@@ -142,7 +142,7 @@ async function resolveHorizontalScrollTarget(page, selector) {
           try {
             el.scrollLeft = initialScrollLeft + probeDistance;
             canScrollProgrammatically = el.scrollLeft !== initialScrollLeft;
-          } catch (err) {
+          } catch {
             canScrollProgrammatically = false;
           } finally {
             el.scrollLeft = initialScrollLeft;

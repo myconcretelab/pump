@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Local web automation tool with API capture and filtering",
   "private": true,
+  "type": "module",
   "workspaces": [
     "backend",
     "frontend"
   ],
   "scripts": {
     "install-all": "npm install",
+    "update": "./update.sh",
     "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
     "dev:backend": "npm run dev --workspace backend",
     "dev:frontend": "npm run dev --workspace frontend",
+    "lint": "npm run lint --workspace backend && npm run lint --workspace frontend",
     "build": "npm run build --workspace backend && npm run build --workspace frontend",
     "build:backend": "npm run build --workspace backend",
     "build:frontend": "npm run build --workspace frontend",
@@ -19,6 +22,10 @@
     "start:backend": "npm run start --workspace backend"
   },
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "@eslint/js": "^9.22.0",
+    "concurrently": "^8.2.1",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.0.0"
   }
 }

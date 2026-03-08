@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import useStore from '../store/store';
 import ConfigForm from '../components/ConfigForm';
 import FilterRules from '../components/FilterRules';
+import ApiKeySettings from '../components/ApiKeySettings';
 import useConfig from '../hooks/useConfig';
 
 export default function ConfigPage({ onSessionStart }) {
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const { loading, error } = useConfig();
+  const { loading, error, reloadConfig } = useConfig();
 
   return (
     <div className="space-y-6">
@@ -16,6 +17,8 @@ export default function ConfigPage({ onSessionStart }) {
         <h1 className="text-4xl font-bold text-white mb-2">🚀 Pump</h1>
         <p className="text-purple-300">Web Automation & API Capture Tool</p>
       </div>
+
+      <ApiKeySettings onSaved={reloadConfig} />
 
       {/* Main Config Form */}
       <div className="bg-slate-800 rounded-lg shadow-2xl border border-purple-500/30 p-8">

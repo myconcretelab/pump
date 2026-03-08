@@ -1,9 +1,8 @@
 import { existsSync, mkdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { resolveDataPath } from '../runtime/paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const storageStatesRoot = join(__dirname, '../../data/storageStates');
+const storageStatesRoot = resolveDataPath('storageStates');
 
 function ensureStorageStatesRoot() {
   if (!existsSync(storageStatesRoot)) {
@@ -28,7 +27,7 @@ function buildStorageStateId(config = {}) {
     try {
       const parsedUrl = new URL(config.baseUrl);
       hostname = parsedUrl.host || parsedUrl.hostname || hostname;
-    } catch (err) {
+    } catch {
       // Keep fallback hostname when URL parsing fails.
     }
   }

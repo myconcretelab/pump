@@ -5,6 +5,39 @@ import scrolling from './scrolling.js';
 import utils from './utils.js';
 import storageState from '../storage/storageState.js';
 
+function resolveBooleanSetting(value, fallback) {
+  if (typeof value === 'boolean') {
+    return value;
+  }
+
+  const normalized = String(value || '')
+    .trim()
+    .toLowerCase();
+
+  if (['1', 'true', 'yes', 'on'].includes(normalized)) {
+    return true;
+  }
+
+  if (['0', 'false', 'no', 'off'].includes(normalized)) {
+    return false;
+  }
+
+  return fallback;
+}
+
+function resolvePlaywrightLaunchOptions() {
+  const headless = resolveBooleanSetting(
+    process.env.PLAYWRIGHT_HEADLESS,
+    process.env.NODE_ENV === 'production'
+  );
+  const disableSandbox = resolveBooleanSetting(process.env.PLAYWRIGHT_DISABLE_SANDBOX, false);
+
+  return {
+    headless,
+    args: disableSandbox ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
+  };
+}
+
 class PlaywrightSession {
   constructor(config) {
     this.config = config;
@@ -20,10 +53,11 @@ class PlaywrightSession {
   async initialize() {
     try {
       logger.info('Initializing Playwright browser...');
-      this.browser = await chromium.launch({ headless: false });
+      const launchOptions = resolvePlaywrightLaunchOptions();
+      this.browser = await chromium.launch(launchOptions);
       this.context = await this.createContext();
       this.page = await this.context.newPage();
-      logger.info('Playwright browser initialized');
+      logger.info('Playwright browser initialized', launchOptions);
       return true;
     } catch (err) {
       logger.error('Failed to initialize Playwright', { error: err.message });

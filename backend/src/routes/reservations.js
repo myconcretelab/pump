@@ -4,28 +4,11 @@ import logger from '../logger.js';
 import sessionRegistry from '../storage/sessionRegistry.js';
 import { extractReservationsFromSession } from '../results/reservations.js';
 import { getActiveSessionStatus, startBackgroundSession } from './session.js';
+import { getConfiguredApiKey, getPresentedApiKey } from '../security/apiKeyAuth.js';
 
 const router = express.Router();
 const FINISHED_STATUSES = new Set(['completed', 'failed', 'stopped']);
 let latestRefreshSessionId = null;
-
-function getConfiguredApiKey() {
-  return String(process.env.PUMP_API_KEY || '').trim();
-}
-
-function getPresentedApiKey(req) {
-  const headerKey = String(req.get('x-api-key') || '').trim();
-  if (headerKey) {
-    return headerKey;
-  }
-
-  const authHeader = String(req.get('authorization') || '').trim();
-  if (!authHeader.toLowerCase().startsWith('bearer ')) {
-    return '';
-  }
-
-  return authHeader.slice(7).trim();
-}
 
 function requireApiKey(req, res, next) {
   const configuredApiKey = getConfiguredApiKey();

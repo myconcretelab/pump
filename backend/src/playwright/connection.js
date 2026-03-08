@@ -345,7 +345,7 @@ async function performLoginWithOTP(page, config, otpCallback) {
   }
 }
 
-async function checkIfLoginRequired(page, config) {
+async function checkIfLoginRequired(page, _config) {
   try {
     // Simple heuristics to detect login form
     const loginFormSelectors = [
@@ -367,7 +367,7 @@ async function checkIfLoginRequired(page, config) {
           logger.debug('Login form detected');
           return true;
         }
-      } catch (err) {
+      } catch {
         // Continue checking other selectors
       }
     }

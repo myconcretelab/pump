@@ -658,7 +658,7 @@ function formatValue(value) {
 
   try {
     return JSON.stringify(value, null, 2);
-  } catch (err) {
+  } catch {
     return String(value);
   }
 }
@@ -673,7 +673,7 @@ function formatCurrencyAmount(value, currency) {
       style: 'currency',
       currency: currency || 'EUR',
     }).format(value);
-  } catch (err) {
+  } catch {
     return `${value} ${currency || 'EUR'}`;
   }
 }
@@ -755,7 +755,7 @@ function deriveUrlPattern(urlValue) {
     }
 
     return parsed.hostname;
-  } catch (err) {
+  } catch {
     return urlValue;
   }
 }

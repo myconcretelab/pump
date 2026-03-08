@@ -14,7 +14,7 @@ function generateResponseFilename(response, index) {
 
     // Generate: index_method_sanitizedPath.json
     return `${String(index).padStart(4, '0')}_${response.method.toLowerCase()}_${sanitized || 'response'}.json`;
-  } catch (err) {
+  } catch {
     // Fallback if URL parsing fails
     return `${String(index).padStart(4, '0')}_${response.method.toLowerCase()}_response.json`;
   }

@@ -1,10 +1,9 @@
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
 import { broadcastLog } from './logStream.js';
+import { resolveDataPath } from './runtime/paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const logsDir = join(__dirname, '../../data/logs');
+const logsDir = resolveDataPath('logs');
 
 // Ensure logs directory exists
 if (!existsSync(logsDir)) {
@@ -25,7 +24,7 @@ function formatTimestamp() {
 function formatLog(level, message, data = null) {
   const timestamp = formatTimestamp();
   const prefix = `[${timestamp}] ${level}`;
-  
+
   if (data) {
     return `${prefix}: ${message} ${JSON.stringify(data)}`;
   }

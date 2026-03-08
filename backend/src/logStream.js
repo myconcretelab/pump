@@ -15,7 +15,7 @@ function sendToClient(client, data) {
   try {
     client.res.write(`data: ${JSON.stringify(data)}\n\n`);
     return true;
-  } catch (err) {
+  } catch {
     return false;
   }
 }

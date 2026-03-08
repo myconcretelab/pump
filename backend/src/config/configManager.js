@@ -1,9 +1,8 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { resolveDataPath } from '../runtime/paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const dataDir = join(__dirname, '../../data/configs');
+const dataDir = resolveDataPath('configs');
 
 // Ensure directory exists
 if (!existsSync(dataDir)) {

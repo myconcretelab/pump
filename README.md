@@ -78,13 +78,15 @@ npm run dev:frontend
 
 These defaults are meant to coexist with the `contrats` repo without changing ports.
 
-### External API Security
+### API Security
 
-To secure machine-to-machine access on the reservations endpoints, define:
+To protect all `/api/*` routes in production, define:
 
 ```bash
 export PUMP_API_KEY="replace-with-a-long-random-secret"
 ```
+
+The frontend includes an API key field and stores the key only in the current browser.
 
 Optional, if automated refresh needs to log in again:
 
@@ -92,15 +94,73 @@ Optional, if automated refresh needs to log in again:
 export PUMP_SESSION_PASSWORD="your-login-password"
 ```
 
+Recommended for server and container deployments:
+
+```bash
+export PLAYWRIGHT_HEADLESS="true"
+```
+
+Optional path overrides:
+
+```bash
+export DATA_DIR="./data"
+export FRONTEND_DIST_DIR="./frontend/dist"
+export FRONTEND_URL="http://localhost:5174"
+```
 
 ### Production Build
 
 ```bash
 npm run build
+npm run lint
 npm start
 ```
 
-Builds frontend and starts backend on port 3000.
+Builds the frontend, then starts the backend on port 3000 and serves the built UI from Express.
+
+### Deployment Checklist
+
+Before exposing the app outside localhost:
+
+1. Define `PUMP_API_KEY` with a long random secret.
+2. Set `FRONTEND_URL` to the real frontend origin allowed by CORS.
+3. Set `PLAYWRIGHT_HEADLESS=true` on servers and containers.
+4. If needed, set `PLAYWRIGHT_DISABLE_SANDBOX=true` for restricted container runtimes.
+5. Ensure `DATA_DIR` points to a persistent writable directory.
+6. Run `npm ci`.
+7. Run `npm run lint`.
+8. Run `npm run build`.
+9. Start the app with `npm start`.
+10. Verify the smoke tests below before opening network access.
+
+### Production Smoke Tests
+
+Without API key:
+
+```bash
+curl -i http://localhost:3000/
+curl -i http://localhost:3000/health
+curl -i http://localhost:3000/api/config
+```
+
+Expected:
+- `/` returns `200`
+- `/health` returns `200`
+- `/api/config` returns `401` when `PUMP_API_KEY` is configured
+
+With API key:
+
+```bash
+curl -i http://localhost:3000/api/config \
+  -H "x-api-key: $PUMP_API_KEY"
+
+curl -i http://localhost:3000/api/results/sessions \
+  -H "x-api-key: $PUMP_API_KEY"
+```
+
+Expected:
+- authenticated API routes return `200`
+- the UI loads and can fetch config after entering the API key in the browser
 
 ---
 

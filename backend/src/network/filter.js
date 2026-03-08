@@ -6,33 +6,39 @@ function evaluateRule(rule, request, response) {
 
   try {
     switch (type) {
-      case 'url-contains':
+      case 'url-contains': {
         result = request.url.includes(pattern);
         break;
+      }
 
-      case 'url-starts-with':
+      case 'url-starts-with': {
         result = request.url.startsWith(pattern);
         break;
+      }
 
-      case 'method':
+      case 'method': {
         result = request.method === pattern.toUpperCase();
         break;
+      }
 
-      case 'content-type':
+      case 'content-type': {
         const contentType = response.headers['content-type'] || '';
         result = contentType.includes(pattern);
         break;
+      }
 
-      case 'status-code':
+      case 'status-code': {
         result = response.status === parseInt(pattern);
         break;
+      }
 
-      case 'status-range':
+      case 'status-range': {
         const [minStatus, maxStatus] = pattern.split('-').map(Number);
         result = response.status >= minStatus && response.status <= maxStatus;
         break;
+      }
 
-      case 'response-contains':
+      case 'response-contains': {
         if (typeof response.body === 'string') {
           result = response.body.includes(pattern);
         } else if (response.body !== null && response.body !== undefined) {
@@ -41,13 +47,15 @@ function evaluateRule(rule, request, response) {
           result = false;
         }
         break;
+      }
 
-      case 'json-only':
+      case 'json-only': {
         const ct = response.headers['content-type'] || '';
         result = ct.includes('application/json');
         break;
+      }
 
-      case 'exclude-assets':
+      case 'exclude-assets': {
         // Exclude common static assets
         const url = request.url.toLowerCase();
         result =
@@ -62,8 +70,9 @@ function evaluateRule(rule, request, response) {
           !url.includes('.eot') &&
           !url.includes('.otf');
         break;
+      }
 
-      case 'exclude-tracking':
+      case 'exclude-tracking': {
         // Exclude tracking and analytics services
         const trackingDomains = [
           'google-analytics',
@@ -76,6 +85,7 @@ function evaluateRule(rule, request, response) {
         const trackingUrl = request.url.toLowerCase();
         result = !trackingDomains.some((domain) => trackingUrl.includes(domain));
         break;
+      }
 
       default:
         logger.warn(`Unknown filter rule type: ${type}`);

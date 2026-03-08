@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+echo "Updating Pump after git pull..."
+
+mkdir -p data/configs
+mkdir -p data/sessions
+mkdir -p data/logs
+
+echo ""
+echo "Installing npm dependencies..."
+npm install
+
+echo ""
+echo "Updating Playwright browser..."
+npm exec playwright install chromium
+
+echo ""
+echo "Verifying build..."
+npm run build
+
+echo ""
+echo "Update complete."
+echo ""
+echo "Next step:"
+echo "  npm run dev"

@@ -1,9 +1,8 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { resolveDataPath } from '../runtime/paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const sessionsRoot = join(__dirname, '../../data/sessions');
+const sessionsRoot = resolveDataPath('sessions');
 const registryPath = join(sessionsRoot, 'index.json');
 
 function ensureRegistry() {
@@ -20,7 +19,7 @@ function readRegistry() {
   ensureRegistry();
   try {
     return JSON.parse(readFileSync(registryPath, 'utf-8'));
-  } catch (err) {
+  } catch {
     return { sessions: {} };
   }
 }
