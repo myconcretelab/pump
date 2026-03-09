@@ -186,6 +186,10 @@ export default function ConfigForm({ onSessionStart }) {
           />
         </div>
       </div>
+      <p className="text-xs text-slate-400 mt-2">
+        Distance and delay are used as baselines. Each automatic scroll applies a small random
+        variation to feel less mechanical.
+      </p>
 
       {config.manualScrollMode && (
         <div>

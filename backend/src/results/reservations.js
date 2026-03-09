@@ -140,11 +140,19 @@ function getDayNote(day) {
   return null;
 }
 
+function isOpenCalendarDay(day) {
+  return day?.available === true && day?.bookable === true;
+}
+
 function collectReservations(body, listingById, reservationsByKey) {
   const calendars = body?.data?.patek?.getMultiCalendarListingsAndCalendars?.hostCalendarsResponse?.calendars || [];
 
   for (const calendar of calendars) {
     for (const day of calendar?.days || []) {
+      if (isOpenCalendarDay(day)) {
+        continue;
+      }
+
       const reservation = getDayReservation(day);
       if (!reservation) {
         continue;
@@ -193,6 +201,10 @@ function collectBlockedDateNotes(body, blockedDaysByKey) {
   for (const calendar of calendars) {
     for (const day of calendar?.days || []) {
       if (!isIsoDate(day?.day)) {
+        continue;
+      }
+
+      if (isOpenCalendarDay(day)) {
         continue;
       }
 

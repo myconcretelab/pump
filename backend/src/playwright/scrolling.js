@@ -1,16 +1,41 @@
 import logger from '../logger.js';
 import utils from './utils.js';
 
+const DISTANCE_JITTER_RATIO = 0.12;
+const DELAY_JITTER_RATIO = 0.18;
+
+function getTriangularOffset() {
+  return Math.random() - Math.random();
+}
+
+function getHumanizedValue(baseValue, jitterRatio, minimumValue) {
+  const safeBaseValue = Math.max(minimumValue, Math.round(baseValue));
+  const jitterRange = Math.max(1, Math.round(safeBaseValue * jitterRatio));
+  const randomizedValue = safeBaseValue + Math.round(getTriangularOffset() * jitterRange);
+
+  return Math.max(minimumValue, randomizedValue);
+}
+
+function getHumanizedScrollStep(config) {
+  return {
+    distance: getHumanizedValue(config.scrollDistance, DISTANCE_JITTER_RATIO, 1),
+    delay: getHumanizedValue(config.scrollDelay, DELAY_JITTER_RATIO, 0),
+  };
+}
+
 async function scrollWithDirectModification(page, selector, config) {
   logger.info(`Scrolling ${selector} with direct modification strategy`);
 
-  const { scrollCount, scrollDistance, scrollDelay } = config;
+  const { scrollCount } = config;
 
   for (let i = 0; i < scrollCount; i++) {
     try {
+      const { distance, delay } = getHumanizedScrollStep(config);
       const initialScroll = await utils.getScrollableInfo(page, selector);
       logger.debug(`Scroll iteration ${i + 1}/${scrollCount}`, {
         currentScrollLeft: initialScroll.scrollLeft,
+        distance,
+        delay: i < scrollCount - 1 ? delay : 0,
       });
 
       // Scroll horizontally
@@ -21,12 +46,12 @@ async function scrollWithDirectModification(page, selector, config) {
             el.scrollLeft += dist;
           }
         },
-        { sel: selector, dist: scrollDistance }
+        { sel: selector, dist: distance }
       );
 
       // Wait before next scroll
       if (i < scrollCount - 1) {
-        await utils.wait(scrollDelay);
+        await utils.wait(delay);
       }
 
       const finalScroll = await utils.getScrollableInfo(page, selector);
@@ -50,7 +75,7 @@ async function scrollWithDirectModification(page, selector, config) {
 async function scrollWithMouseWheel(page, selector, config) {
   logger.info(`Scrolling ${selector} with mouse wheel strategy`);
 
-  const { scrollCount, scrollDistance, scrollDelay } = config;
+  const { scrollCount } = config;
 
   try {
     // Get element bounds
@@ -63,15 +88,24 @@ async function scrollWithMouseWheel(page, selector, config) {
     const centerY = bounds.y + bounds.height / 2;
 
     for (let i = 0; i < scrollCount; i++) {
-      logger.debug(`Mouse wheel scroll ${i + 1}/${scrollCount}`);
+      const { distance, delay } = getHumanizedScrollStep(config);
+      const pointerOffsetX = getTriangularOffset() * Math.min(18, Math.max(6, bounds.width * 0.08));
+      const pointerOffsetY = getTriangularOffset() * Math.min(12, Math.max(4, bounds.height * 0.08));
+
+      logger.debug(`Mouse wheel scroll ${i + 1}/${scrollCount}`, {
+        distance,
+        delay: i < scrollCount - 1 ? delay : 0,
+      });
 
       // Move mouse to center of element
-      await page.mouse.move(centerX, centerY);
+      await page.mouse.move(centerX + pointerOffsetX, centerY + pointerOffsetY, {
+        steps: 6 + Math.floor(Math.random() * 7),
+      });
 
-      await page.mouse.wheel(scrollDistance, 0);
+      await page.mouse.wheel(distance, 0);
 
       if (i < scrollCount - 1) {
-        await utils.wait(scrollDelay || 1000);
+        await utils.wait(delay);
       }
     }
 
